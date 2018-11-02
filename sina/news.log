@@ -1,0 +1,1403 @@
+2018-11-02 13:12:20 [scrapy.utils.log] INFO: Scrapy 1.5.1 started (bot: sina)
+2018-11-02 13:12:20 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.5, cssselect 1.0.3, parsel 1.5.0, w3lib 1.19.0, Twisted 18.9.0, Python 3.6.6 (v3.6.6:4cf1f54eb7, Jun 27 2018, 02:47:15) [MSC v.1900 32 bit (Intel)], pyOpenSSL 18.0.0 (OpenSSL 1.1.0i  14 Aug 2018), cryptography 2.3.1, Platform Windows-10-10.0.17134-SP0
+2018-11-02 13:12:20 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'sina', 'DOWNLOAD_DELAY': 3, 'LOG_FILE': 'news.log', 'NEWSPIDER_MODULE': 'sina.spiders', 'SPIDER_MODULES': ['sina.spiders'], 'USER_AGENT': 'Mozilla/5.0 (Windows NT 6.1; rv,2.0.1) Gecko/20100101 Firefox/4.0.1'}
+2018-11-02 13:12:20 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2018-11-02 13:12:21 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-11-02 13:12:21 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-11-02 13:12:21 [scrapy.middleware] INFO: Enabled item pipelines:
+['sina.pipelines.SinaPipeline']
+2018-11-02 13:12:21 [scrapy.core.engine] INFO: Spider opened
+2018-11-02 13:12:21 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-11-02 13:12:21 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-11-02 13:12:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://news.sina.com.cn/guide/> (referer: None)
+2018-11-02 13:12:21 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-11-02 13:12:21 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 254,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 23366,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 11, 2, 5, 12, 21, 770803),
+ 'log_count/DEBUG': 2,
+ 'log_count/INFO': 7,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2018, 11, 2, 5, 12, 21, 395811)}
+2018-11-02 13:12:21 [scrapy.core.engine] INFO: Spider closed (finished)
+2018-11-02 13:12:45 [scrapy.utils.log] INFO: Scrapy 1.5.1 started (bot: sina)
+2018-11-02 13:12:45 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.5, cssselect 1.0.3, parsel 1.5.0, w3lib 1.19.0, Twisted 18.9.0, Python 3.6.6 (v3.6.6:4cf1f54eb7, Jun 27 2018, 02:47:15) [MSC v.1900 32 bit (Intel)], pyOpenSSL 18.0.0 (OpenSSL 1.1.0i  14 Aug 2018), cryptography 2.3.1, Platform Windows-10-10.0.17134-SP0
+2018-11-02 13:12:45 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'sina', 'DOWNLOAD_DELAY': 3, 'LOG_FILE': 'news.log', 'NEWSPIDER_MODULE': 'sina.spiders', 'SPIDER_MODULES': ['sina.spiders'], 'USER_AGENT': 'Mozilla/5.0 (Windows NT 6.1; rv,2.0.1) Gecko/20100101 Firefox/4.0.1'}
+2018-11-02 13:12:45 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2018-11-02 13:12:46 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-11-02 13:12:46 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-11-02 13:12:46 [scrapy.middleware] INFO: Enabled item pipelines:
+['sina.pipelines.SinaPipeline']
+2018-11-02 13:12:46 [scrapy.core.engine] INFO: Spider opened
+2018-11-02 13:12:46 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-11-02 13:12:46 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-11-02 13:12:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://news.sina.com.cn/guide/> (referer: None)
+2018-11-02 13:12:46 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-11-02 13:12:46 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 254,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 23366,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 11, 2, 5, 12, 46, 748792),
+ 'log_count/DEBUG': 2,
+ 'log_count/INFO': 7,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2018, 11, 2, 5, 12, 46, 368690)}
+2018-11-02 13:12:46 [scrapy.core.engine] INFO: Spider closed (finished)
+2018-11-02 13:13:03 [scrapy.utils.log] INFO: Scrapy 1.5.1 started (bot: sina)
+2018-11-02 13:13:03 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.5, cssselect 1.0.3, parsel 1.5.0, w3lib 1.19.0, Twisted 18.9.0, Python 3.6.6 (v3.6.6:4cf1f54eb7, Jun 27 2018, 02:47:15) [MSC v.1900 32 bit (Intel)], pyOpenSSL 18.0.0 (OpenSSL 1.1.0i  14 Aug 2018), cryptography 2.3.1, Platform Windows-10-10.0.17134-SP0
+2018-11-02 13:13:03 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'sina', 'DOWNLOAD_DELAY': 3, 'LOG_FILE': 'news.log', 'NEWSPIDER_MODULE': 'sina.spiders', 'SPIDER_MODULES': ['sina.spiders'], 'USER_AGENT': 'Mozilla/5.0 (Windows NT 6.1; rv,2.0.1) Gecko/20100101 Firefox/4.0.1'}
+2018-11-02 13:13:04 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2018-11-02 13:13:04 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-11-02 13:13:04 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-11-02 13:13:04 [scrapy.middleware] INFO: Enabled item pipelines:
+['sina.pipelines.SinaPipeline']
+2018-11-02 13:13:04 [scrapy.core.engine] INFO: Spider opened
+2018-11-02 13:13:04 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-11-02 13:13:04 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-11-02 13:13:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://news.sina.com.cn/guide/> (referer: None)
+2018-11-02 13:13:05 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-11-02 13:13:05 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 254,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 23365,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 11, 2, 5, 13, 5, 100822),
+ 'log_count/DEBUG': 2,
+ 'log_count/INFO': 7,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2018, 11, 2, 5, 13, 4, 697729)}
+2018-11-02 13:13:05 [scrapy.core.engine] INFO: Spider closed (finished)
+2018-11-02 13:14:15 [scrapy.utils.log] INFO: Scrapy 1.5.1 started (bot: sina)
+2018-11-02 13:14:15 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.5, cssselect 1.0.3, parsel 1.5.0, w3lib 1.19.0, Twisted 18.9.0, Python 3.6.6 (v3.6.6:4cf1f54eb7, Jun 27 2018, 02:47:15) [MSC v.1900 32 bit (Intel)], pyOpenSSL 18.0.0 (OpenSSL 1.1.0i  14 Aug 2018), cryptography 2.3.1, Platform Windows-10-10.0.17134-SP0
+2018-11-02 13:14:15 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'sina', 'DOWNLOAD_DELAY': 3, 'LOG_FILE': 'news.log', 'NEWSPIDER_MODULE': 'sina.spiders', 'SPIDER_MODULES': ['sina.spiders'], 'USER_AGENT': 'Mozilla/5.0 (Windows NT 6.1; rv,2.0.1) Gecko/20100101 Firefox/4.0.1'}
+2018-11-02 13:14:15 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2018-11-02 13:14:16 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-11-02 13:14:16 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-11-02 13:14:16 [scrapy.middleware] INFO: Enabled item pipelines:
+['sina.pipelines.SinaPipeline']
+2018-11-02 13:14:16 [scrapy.core.engine] INFO: Spider opened
+2018-11-02 13:14:16 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-11-02 13:14:16 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-11-02 13:14:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://news.sina.com.cn/guide/> (referer: None)
+2018-11-02 13:14:16 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-11-02 13:14:16 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 254,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 23365,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 11, 2, 5, 14, 16, 622622),
+ 'log_count/DEBUG': 2,
+ 'log_count/INFO': 7,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2018, 11, 2, 5, 14, 16, 242563)}
+2018-11-02 13:14:16 [scrapy.core.engine] INFO: Spider closed (finished)
+2018-11-02 13:14:46 [scrapy.utils.log] INFO: Scrapy 1.5.1 started (bot: sina)
+2018-11-02 13:14:46 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.5, cssselect 1.0.3, parsel 1.5.0, w3lib 1.19.0, Twisted 18.9.0, Python 3.6.6 (v3.6.6:4cf1f54eb7, Jun 27 2018, 02:47:15) [MSC v.1900 32 bit (Intel)], pyOpenSSL 18.0.0 (OpenSSL 1.1.0i  14 Aug 2018), cryptography 2.3.1, Platform Windows-10-10.0.17134-SP0
+2018-11-02 13:14:46 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'sina', 'DOWNLOAD_DELAY': 3, 'LOG_FILE': 'news.log', 'NEWSPIDER_MODULE': 'sina.spiders', 'SPIDER_MODULES': ['sina.spiders'], 'USER_AGENT': 'Mozilla/5.0 (Windows NT 6.1; rv,2.0.1) Gecko/20100101 Firefox/4.0.1'}
+2018-11-02 13:14:46 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2018-11-02 13:14:47 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-11-02 13:14:47 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-11-02 13:14:47 [scrapy.middleware] INFO: Enabled item pipelines:
+['sina.pipelines.SinaPipeline']
+2018-11-02 13:14:47 [scrapy.core.engine] INFO: Spider opened
+2018-11-02 13:14:47 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-11-02 13:14:47 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-11-02 13:14:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://news.sina.com.cn/guide/> (referer: None)
+2018-11-02 13:14:47 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-11-02 13:14:47 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 254,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 23366,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 11, 2, 5, 14, 47, 911431),
+ 'log_count/DEBUG': 2,
+ 'log_count/INFO': 7,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2018, 11, 2, 5, 14, 47, 567692)}
+2018-11-02 13:14:47 [scrapy.core.engine] INFO: Spider closed (finished)
+2018-11-02 13:15:21 [scrapy.utils.log] INFO: Scrapy 1.5.1 started (bot: sina)
+2018-11-02 13:15:21 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.5, cssselect 1.0.3, parsel 1.5.0, w3lib 1.19.0, Twisted 18.9.0, Python 3.6.6 (v3.6.6:4cf1f54eb7, Jun 27 2018, 02:47:15) [MSC v.1900 32 bit (Intel)], pyOpenSSL 18.0.0 (OpenSSL 1.1.0i  14 Aug 2018), cryptography 2.3.1, Platform Windows-10-10.0.17134-SP0
+2018-11-02 13:15:21 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'sina', 'DOWNLOAD_DELAY': 3, 'LOG_FILE': 'news.log', 'NEWSPIDER_MODULE': 'sina.spiders', 'SPIDER_MODULES': ['sina.spiders'], 'USER_AGENT': 'Mozilla/5.0 (Windows NT 6.1; rv,2.0.1) Gecko/20100101 Firefox/4.0.1'}
+2018-11-02 13:15:21 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2018-11-02 13:15:22 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-11-02 13:15:22 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-11-02 13:15:22 [scrapy.middleware] INFO: Enabled item pipelines:
+['sina.pipelines.SinaPipeline']
+2018-11-02 13:15:22 [scrapy.core.engine] INFO: Spider opened
+2018-11-02 13:15:22 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-11-02 13:15:22 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-11-02 13:15:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://news.sina.com.cn/guide/> (referer: None)
+2018-11-02 13:15:23 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'sports.sina.com.cn': <GET http://sports.sina.com.cn/nba/>
+2018-11-02 13:15:23 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'ent.sina.com.cn': <GET http://ent.sina.com.cn/gossip/>
+2018-11-02 13:15:23 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'finance.sina.com.cn': <GET http://finance.sina.com.cn/stock/>
+2018-11-02 13:15:23 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'tech.sina.com.cn': <GET http://tech.sina.com.cn/zl/>
+2018-11-02 13:15:23 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'zhuanlan.sina.com.cn': <GET http://zhuanlan.sina.com.cn/author/>
+2018-11-02 13:15:23 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'photo.sina.com.cn': <GET http://photo.sina.com.cn/>
+2018-11-02 13:15:23 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'fashion.sina.com.cn': <GET http://fashion.sina.com.cn/zl/>
+2018-11-02 13:15:23 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'eladies.sina.com.cn': <GET http://eladies.sina.com.cn/feel/>
+2018-11-02 13:15:23 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'collection.sina.com.cn': <GET http://collection.sina.com.cn/auction/>
+2018-11-02 13:15:23 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'auto.sina.com.cn': <GET http://auto.sina.com.cn/newcar/>
+2018-11-02 13:15:23 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'edu.sina.com.cn': <GET http://edu.sina.com.cn/zl/>
+2018-11-02 13:15:23 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'baby.sina.com.cn': <GET http://baby.sina.com.cn/yunchan/>
+2018-11-02 13:15:23 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'astro.sina.com.cn': <GET http://astro.sina.com.cn/luck/>
+2018-11-02 13:15:23 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'fo.sina.com.cn': <GET http://fo.sina.com.cn/intro/>
+2018-11-02 13:15:23 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'travel.sina.com.cn': <GET http://travel.sina.com.cn/lvyou/>
+2018-11-02 13:15:23 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'games.sina.com.cn': <GET http://games.sina.com.cn/newgame/>
+2018-11-02 13:15:23 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'weibo.com': <GET http://weibo.com/signup/signup.php>
+2018-11-02 13:15:23 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'blog.sina.com.cn': <GET http://blog.sina.com.cn/lm/ent/>
+2018-11-02 13:15:23 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'video.sina.com.cn': <GET http://video.sina.com.cn/news/>
+2018-11-02 13:15:23 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'mail.sina.com.cn': <GET http://mail.sina.com.cn/>
+2018-11-02 13:15:23 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'tools.sina.com.cn': <GET http://tools.sina.com.cn/map/beijinglukuang.html>
+2018-11-02 13:15:23 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'search.sina.com.cn': <GET http://search.sina.com.cn/>
+2018-11-02 13:15:25 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://news.sina.com.cn/china/> from <GET http://news.sina.com.cn/china/>
+2018-11-02 13:15:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://news.sina.com.cn/m/sinanews.html> (referer: http://news.sina.com.cn/guide/)
+2018-11-02 13:15:30 [scrapy.crawler] INFO: Received SIGINT, shutting down gracefully. Send again to force 
+2018-11-02 13:15:30 [scrapy.core.engine] INFO: Closing spider (shutdown)
+2018-11-02 13:15:32 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (meta refresh) to <GET http://blog.sina.cn/> from <GET http://news.sina.com.cn/437/2008/0703/24.html>
+2018-11-02 13:15:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://news.sina.com.cn/zl/> (referer: http://news.sina.com.cn/guide/)
+2018-11-02 13:15:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://news.sina.com.cn/zt/> (referer: http://news.sina.com.cn/guide/)
+2018-11-02 13:15:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://news.sina.com.cn/hotnews/> (referer: http://news.sina.com.cn/guide/)
+2018-11-02 13:15:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://news.sina.com.cn/media/> (referer: http://news.sina.com.cn/guide/)
+2018-11-02 13:15:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://news.sina.com.cn/opinion/> (referer: http://news.sina.com.cn/guide/)
+2018-11-02 13:15:56 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://news.sina.com.cn/society/> from <GET http://news.sina.com.cn/society/>
+2018-11-02 13:16:01 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://news.sina.com.cn/world/> from <GET http://news.sina.com.cn/world/>
+2018-11-02 13:16:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://news.sina.com.cn/china/> (referer: http://news.sina.com.cn/guide/)
+2018-11-02 13:16:05 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'news.leju.com': <GET http://news.leju.com/2018-11-02/6463946598820133956.shtml>
+2018-11-02 13:16:06 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 3523,
+ 'downloader/request_count': 12,
+ 'downloader/request_method_count/GET': 12,
+ 'downloader/response_bytes': 194775,
+ 'downloader/response_count': 12,
+ 'downloader/response_status_count/200': 9,
+ 'downloader/response_status_count/302': 3,
+ 'finish_reason': 'shutdown',
+ 'finish_time': datetime.datetime(2018, 11, 2, 5, 16, 6, 4343),
+ 'log_count/DEBUG': 36,
+ 'log_count/INFO': 8,
+ 'offsite/domains': 23,
+ 'offsite/filtered': 208,
+ 'request_depth_max': 2,
+ 'response_received_count': 8,
+ 'scheduler/dequeued': 12,
+ 'scheduler/dequeued/memory': 12,
+ 'scheduler/enqueued': 25,
+ 'scheduler/enqueued/memory': 25,
+ 'start_time': datetime.datetime(2018, 11, 2, 5, 15, 22, 578922)}
+2018-11-02 13:16:06 [scrapy.core.engine] INFO: Spider closed (shutdown)
+2018-11-02 13:16:28 [scrapy.utils.log] INFO: Scrapy 1.5.1 started (bot: sina)
+2018-11-02 13:16:28 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.5, cssselect 1.0.3, parsel 1.5.0, w3lib 1.19.0, Twisted 18.9.0, Python 3.6.6 (v3.6.6:4cf1f54eb7, Jun 27 2018, 02:47:15) [MSC v.1900 32 bit (Intel)], pyOpenSSL 18.0.0 (OpenSSL 1.1.0i  14 Aug 2018), cryptography 2.3.1, Platform Windows-10-10.0.17134-SP0
+2018-11-02 13:16:28 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'sina', 'DOWNLOAD_DELAY': 3, 'LOG_FILE': 'news.log', 'NEWSPIDER_MODULE': 'sina.spiders', 'SPIDER_MODULES': ['sina.spiders'], 'USER_AGENT': 'Mozilla/5.0 (Windows NT 6.1; rv,2.0.1) Gecko/20100101 Firefox/4.0.1'}
+2018-11-02 13:16:28 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2018-11-02 13:16:29 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-11-02 13:16:29 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-11-02 13:16:29 [scrapy.middleware] INFO: Enabled item pipelines:
+['sina.pipelines.SinaPipeline']
+2018-11-02 13:16:29 [scrapy.core.engine] INFO: Spider opened
+2018-11-02 13:16:29 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-11-02 13:16:29 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-11-02 13:16:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://news.sina.com.cn/guide/> (referer: None)
+2018-11-02 13:16:29 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-11-02 13:16:29 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 254,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 23365,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 11, 2, 5, 16, 29, 753721),
+ 'log_count/DEBUG': 2,
+ 'log_count/INFO': 7,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2018, 11, 2, 5, 16, 29, 419102)}
+2018-11-02 13:16:29 [scrapy.core.engine] INFO: Spider closed (finished)
+2018-11-02 13:17:39 [scrapy.utils.log] INFO: Scrapy 1.5.1 started (bot: sina)
+2018-11-02 13:17:39 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.5, cssselect 1.0.3, parsel 1.5.0, w3lib 1.19.0, Twisted 18.9.0, Python 3.6.6 (v3.6.6:4cf1f54eb7, Jun 27 2018, 02:47:15) [MSC v.1900 32 bit (Intel)], pyOpenSSL 18.0.0 (OpenSSL 1.1.0i  14 Aug 2018), cryptography 2.3.1, Platform Windows-10-10.0.17134-SP0
+2018-11-02 13:17:39 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'sina', 'DOWNLOAD_DELAY': 3, 'LOG_FILE': 'news.log', 'NEWSPIDER_MODULE': 'sina.spiders', 'SPIDER_MODULES': ['sina.spiders'], 'USER_AGENT': 'Mozilla/5.0 (Windows NT 6.1; rv,2.0.1) Gecko/20100101 Firefox/4.0.1'}
+2018-11-02 13:17:39 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2018-11-02 13:17:40 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-11-02 13:17:40 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-11-02 13:17:40 [scrapy.middleware] INFO: Enabled item pipelines:
+['sina.pipelines.SinaPipeline']
+2018-11-02 13:17:40 [scrapy.core.engine] INFO: Spider opened
+2018-11-02 13:17:40 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-11-02 13:17:40 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-11-02 13:17:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://news.sina.com.cn/guide/> (referer: None)
+2018-11-02 13:17:41 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'sports.sina.com.cn': <GET http://sports.sina.com.cn/nba/>
+2018-11-02 13:17:41 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'ent.sina.com.cn': <GET http://ent.sina.com.cn/gossip/>
+2018-11-02 13:17:41 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'finance.sina.com.cn': <GET http://finance.sina.com.cn/stock/>
+2018-11-02 13:17:41 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'tech.sina.com.cn': <GET http://tech.sina.com.cn/zl/>
+2018-11-02 13:17:41 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'zhuanlan.sina.com.cn': <GET http://zhuanlan.sina.com.cn/author/>
+2018-11-02 13:17:41 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'photo.sina.com.cn': <GET http://photo.sina.com.cn/>
+2018-11-02 13:17:41 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'fashion.sina.com.cn': <GET http://fashion.sina.com.cn/zl/>
+2018-11-02 13:17:41 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'eladies.sina.com.cn': <GET http://eladies.sina.com.cn/feel/>
+2018-11-02 13:17:41 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'collection.sina.com.cn': <GET http://collection.sina.com.cn/auction/>
+2018-11-02 13:17:41 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'auto.sina.com.cn': <GET http://auto.sina.com.cn/newcar/>
+2018-11-02 13:17:41 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'edu.sina.com.cn': <GET http://edu.sina.com.cn/zl/>
+2018-11-02 13:17:41 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'baby.sina.com.cn': <GET http://baby.sina.com.cn/yunchan/>
+2018-11-02 13:17:41 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'astro.sina.com.cn': <GET http://astro.sina.com.cn/luck/>
+2018-11-02 13:17:41 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'fo.sina.com.cn': <GET http://fo.sina.com.cn/intro/>
+2018-11-02 13:17:41 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'travel.sina.com.cn': <GET http://travel.sina.com.cn/lvyou/>
+2018-11-02 13:17:41 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'games.sina.com.cn': <GET http://games.sina.com.cn/newgame/>
+2018-11-02 13:17:41 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'weibo.com': <GET http://weibo.com/signup/signup.php>
+2018-11-02 13:17:41 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'blog.sina.com.cn': <GET http://blog.sina.com.cn/lm/ent/>
+2018-11-02 13:17:41 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'video.sina.com.cn': <GET http://video.sina.com.cn/news/>
+2018-11-02 13:17:41 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'mail.sina.com.cn': <GET http://mail.sina.com.cn/>
+2018-11-02 13:17:41 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'tools.sina.com.cn': <GET http://tools.sina.com.cn/map/beijinglukuang.html>
+2018-11-02 13:17:41 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'search.sina.com.cn': <GET http://search.sina.com.cn/>
+2018-11-02 13:17:44 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://news.sina.com.cn/china/> from <GET http://news.sina.com.cn/china/>
+2018-11-02 13:17:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://news.sina.com.cn/m/sinanews.html> (referer: http://news.sina.com.cn/guide/)
+2018-11-02 13:17:53 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (meta refresh) to <GET http://blog.sina.cn/> from <GET http://news.sina.com.cn/437/2008/0703/24.html>
+2018-11-02 13:17:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://news.sina.com.cn/zl/> (referer: http://news.sina.com.cn/guide/)
+2018-11-02 13:18:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://news.sina.com.cn/zt/> (referer: http://news.sina.com.cn/guide/)
+2018-11-02 13:18:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://news.sina.com.cn/hotnews/> (referer: http://news.sina.com.cn/guide/)
+2018-11-02 13:18:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://news.sina.com.cn/media/> (referer: http://news.sina.com.cn/guide/)
+2018-11-02 13:18:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://news.sina.com.cn/opinion/> (referer: http://news.sina.com.cn/guide/)
+2018-11-02 13:18:17 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://news.sina.com.cn/society/> from <GET http://news.sina.com.cn/society/>
+2018-11-02 13:18:21 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://news.sina.com.cn/world/> from <GET http://news.sina.com.cn/world/>
+2018-11-02 13:18:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://news.sina.com.cn/china/> (referer: http://news.sina.com.cn/guide/)
+2018-11-02 13:18:25 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'news.leju.com': <GET http://news.leju.com/2018-11-02/6463946598820133956.shtml>
+2018-11-02 13:18:29 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://blog.sina.cn/> from <GET http://blog.sina.cn/>
+2018-11-02 13:18:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://news.sina.com.cn/society/> (referer: http://news.sina.com.cn/guide/)
+2018-11-02 13:18:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://news.sina.com.cn/world/> (referer: http://news.sina.com.cn/guide/)
+2018-11-02 13:18:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://news.sina.com.cn/o/2018-11-02/doc-ihmutuea6250010.shtml> (referer: https://news.sina.com.cn/china/)
+2018-11-02 13:18:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://news.sina.com.cn/o/2018-11-02/doc-ihmutuea6250010.shtml>
+{'category': '新闻',
+ 'category_url': 'http://news.sina.com.cn/',
+ 'classify': '国内',
+ 'classify_url': 'http://news.sina.com.cn/china/',
+ 'content': '\u3000\u3000原标题：重庆公交车坠江原因查明 回顾86小时救援全过程\u3000\u3000中新网客户端11月2日电 '
+            '中新网记者从万州区委宣传部获悉，重庆公交车坠江原因查明，系乘客在乘坐公交车过程中与司机发生争吵，进而演化成肢体冲突。双方的互殴行为造成车辆失控，致使车辆与对向正常行驶的小轿车撞击后坠江，十五个鲜活的生命瞬间消逝。\u3000\u3000'
+            '10月28日10时许，重庆市万州区一辆公交车行驶至长江二桥时，与一辆小轿车相撞后坠江。根据调查事实，乘客刘某在乘坐公交车过程中，与正在驾车行驶中的公交车驾驶员冉某发生争吵，两次持手机攻击正在驾驶的公交车驾驶员冉某，实施危害车辆行驶安全的行为，严重危害车辆行驶安全。冉某作为公交车驾驶人员，在驾驶公交车行进中，与乘客刘某发生争吵，遭遇刘某攻击后，应当认识到还击及抓扯行为会严重危害车辆行驶安全，但未采取有效措施确保行车安全，将右手放开方向盘还击刘某，后又用右手格挡刘某的攻击，并与刘某抓扯，其行为严重违反公交车驾驶人职业规定。乘客刘某和驾驶员冉某之间的互殴行为，造成车辆失控，致使车辆与对向正常行驶的小轿车撞击后坠江，造成重大人员伤亡。\u3000\u3000'
+            '坠江事故发生后，外界一直高度关注对人员的搜救及车辆打捞工作。最终，经历近86个小时的救援工作，在10月31日深夜，坠江公交车体被整体打捞出水。以下为整个事件发生与救援过程：\u3000\u3000\u3000\u3000'
+            '10时许，重庆市万州区一辆公交车行驶至长江二桥时，与一辆小轿车相撞后坠江。经公安机关初步核实，失联人员15人。\u3000\u3000'
+            '下午5时许，@平安万州 '
+            '发布通报：经初步事故现场调查，系公交客车在行驶中突然越过中心实线，撞击对向正常行驶的小轿车后冲上路沿，撞断护栏，坠入江中。\u3000\u3000'
+            '事故发生后，国家应急管理部、公安部、交通运输部派员赶赴现场，全力指导协助地方做好人员搜救等处置工作。重庆市委、市政府主要领导高度重视，立即作出指示，亲自指挥，现场成立应急救援指挥部并全面开展救援。万州区委、区政府紧急组织公安、海事、消防、武警、长航等相关救援力量全力救援。\u3000\u3000'
+            '截止23时30分，救援人员打捞出2具遇难者遗体。\u3000\u3000\u3000\u3000'
+            '共有70多艘船只围绕公交车坠江水域全面开展搜救。\u3000\u3000'
+            '经过救援人员水下探测、定位，确定坠江公交车位于长江二桥上游约28米、水深约71米处。\u3000\u3000\u3000\u3000'
+            '上午6时许，潜水员开始下水作业。\u3000\u3000上午10时，第二批潜水员入水。\u3000\u3000'
+            '截至下午3时，三批下潜救援人员救捞出第7名遇难者遗体，并还发现2名遇难者遗体。\u3000\u3000'
+            '事故发生当天，万州公安局交巡警支队通报称，小轿车驾驶员邝某娟被警方控制。30日，记者致电邝某娟丈夫熊某，熊某告诉记者，目前警方已经解除对邝某娟的控制，妻子已经平安回家，一切都好。\u3000\u3000\u3000\u3000'
+            '交通运输部专业潜水员轮番下水，连夜作战。\u3000\u3000'
+            '0时50分，第五批下水的潜水员鲁玉鑫在失事公交车内找到了黑匣子（行车数据记录仪），打捞出水并交给当地公安部门。\u3000\u3000'
+            '11时31分，第七批潜水员下水，完成坠江公交车车尾吊带的安装。\u3000\u3000'
+            '14时46分，第八批潜水员下水，完成坠江公交车车头吊带的安装。\u3000\u3000'
+            '21时31分，开始对重庆万州坠江公交车进行起吊工作。\u3000\u3000'
+            '23时30分左右，成功将坠江公交车整体打捞出水。责任编辑：张申 ',
+ 'son_url': 'https://news.sina.com.cn/o/2018-11-02/doc-ihmutuea6250010.shtml',
+ 'sub_filename': './Data/新闻/国内',
+ 'title': ['重庆公交车坠江原因查明 回顾86小时救援全过程']}
+2018-11-02 13:18:40 [scrapy.extensions.logstats] INFO: Crawled 11 pages (at 11 pages/min), scraped 1 items (at 1 items/min)
+2018-11-02 13:18:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://news.sina.com.cn/c/2018-11-02/doc-ihnfikve5896392.shtml> (referer: https://news.sina.com.cn/china/)
+2018-11-02 13:18:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://news.sina.com.cn/c/2018-11-02/doc-ihnfikve5896392.shtml>
+{'category': '新闻',
+ 'category_url': 'http://news.sina.com.cn/',
+ 'classify': '国内',
+ 'classify_url': 'http://news.sina.com.cn/china/',
+ 'content': '\u3000\u3000原标题：如此“内耗”为哪般\u3000\u3000'
+            '看似是工作上的“老搭档”，实际却是水火不容的“死对头”。江苏省连云港市第二人民医院原党委副书记、院长杨庆松和原党委书记何青云在工作中不仅带头违纪，更在单位内部搞团团伙伙、拉帮结派，把原本治病救人的百年老院弄得乌烟瘴气、混乱不堪——\u3000\u3000'
+            '“我是院长，我们医院的人都得听我的！”\u3000\u3000“我是党委书记，必须我说了算！”\u3000\u3000'
+            '说这两句话的分别是江苏省连云港市第二人民医院原党委副书记、院长杨庆松和原党委书记何青云。\u3000\u3000'
+            '2017年6月，杨庆松因涉嫌严重违纪，被连云港市纪委立案审查，后被开除党籍公职，其涉嫌犯罪问题线索移送司法机关处理，目前已被依法提起公诉。就在杨庆松被查同期，何青云也因违反中央八项规定精神和违反工作纪律，受到党内严重警告处分，并被免职。\u3000\u3000'
+            '杨庆松、何青云二人，看似是工作上的“老搭档”，实际中却是水火不容的“死对头”。两人不仅带头违纪，更在单位内部搞团团伙伙、结党营私、拉帮结派，把原本治病救人的医院弄得乌烟瘴气、混乱不堪，严重破坏了单位政治生态。随着二人相继被查，一出“各立门户”的闹剧戛然而止。\u3000\u3000'
+            '2017年年初，连云港市委巡察组对该市卫计委开展巡察，发现反映该市第二人民医院问题的信访举报较多。2017年5月，市委巡察组杀出“回马枪”，进驻该院开展为期半个月的机动式巡察。\u3000\u3000'
+            '“院长、书记长期不和，自成两派，各有各的小圈子。”据知情人介绍，杨庆松、何青云积怨甚深，而最早的起源竟是一个会议的座次排列。当年，杨庆松担任院长不久，上级领导到医院调研，在会议座次安排上，杨庆松认为自己是行政一把手，应排前面；何青云则认为自己是党委书记，更该居于首位，两人发生争执，就此结下了“梁子”。\u3000\u3000'
+            '这次之后，两人经常在会议上争座次、文件上争排名。为了打压对方，杨庆松、何青云各自在院内拉山头，想方设法将班子成员、中层骨干拉入己方一派。杨庆松甚至以“院长办公会”名义取代“院党委会”，导致本该党委研究决策的“三重一大”事项，直接由“院长办公会”拍板，参会人员大多是杨庆松认可的“自己人”。\u3000\u3000'
+            '为扩充势力，杨庆松以方便工作为名，申请将“老部下”——时任市第一人民医院医务处长的刘晓峰调至二院任副院长，并分管办公室、设备采购等重要部门，惹来诸多非议。刘晓峰来后，无论从工作分工还是经费使用上，都成为班子中制衡何青云的重要力量。有一次，市卫计委党委下发中心组学习计划至二院，刘晓峰故意绕过何青云，将文件呈杨庆松签批落实，何青云得知后恼怒万分，要来文件在签批单上提笔大骂。此事闹到全院尽人皆知。\u3000\u3000'
+            '面对杨庆松一派的“欺压”，何青云一派积极予以“反击”。2016年9月，该院研究中层干部竞聘事宜，何青云多次否决杨庆松方案，两人进而当众指责对方，差点动起手来。不仅如此，巡察组进驻后，何青云等人更指使多名干部职工故意捏造事实，轮番到巡察组举报杨庆松，目的就是扳倒杨庆松让自己“掌权”。\u3000\u3000'
+            '此外，巡察组在查阅资料时也发现，无论是会议决策、还是民主测评，两人意见的支持率总是6：3，9名中层干部中支持杨庆松的有6人，主要以医院业务科室为主；支持何青云的有3人，均是其分管条线人员，“两派”之间你争我夺，内耗严重。\u3000\u3000'
+            '早在2017年3月，市第二人民医院原工会主席、总会计师、财务处处长范国华涉嫌严重违纪接受调查；同年6月，杨庆松落马；8月，原副院长刘晓峰被立案审查。而此前，原副院长姜德清、原院医学检验科主任周彦均因受贿犯罪被判刑。随着一窝“硕鼠”接连被查，权力斗争背后的秘密被揭开。\u3000\u3000'
+            '“二院内部的斗争，看似是对领导权的争夺，但实质却是利益在作祟。谁有主导权，谁就能获得更多利益。”参与查办杨庆松案件的办案人员这样总结。\u3000\u3000'
+            '作为权力斗争中占据优势的一方，杨庆松“一派”长期把控着药品、耗材、设备采购和基建工程的“话语权”，这些事项的决策，几乎不上会研究，即使上会研究也是走走形式。而这样不受约束的权力，必然导致腐败问题发生。经查，2012年以来，杨庆松等人先后利用职务上的便利为他人谋取利益，收受药品、耗材、设备供应商以及金融机构人员赠送的“好处”百万余元。\u3000\u3000'
+            '而杨庆松“吃肉”，其他人跟着“喝汤”。2013年，某医疗公司经理邹某希望本公司代理的医疗设备能够投放二院，分别向杨庆松、刘晓峰行贿15万元、10万元。作为回报，该设备顺利进入该院，购入价及后期维护费用竟高达9000余万元，而此前当地另一家医院购入同款设备，购入价仅为6000余万元，中间差价给医院带来了巨额损失。\u3000\u3000'
+            '同时，作为一派“领头人”，杨庆松不仅收受外人“馈赠”，对“自己人”也来者不拒。2013年至2016年，杨庆松先后9次接受范国华赠送价值4.4万元的购物卡，4次收受某中层干部共计4万元帮助其进行职务调整及其他请托事项，2次收受某科主任价值4000元购物卡……\u3000\u3000'
+            '“这些年他们跟着我也得了不少好处，不接受反而感到疏远了。”杨庆松坦言，他把接受下属馈赠，更多当作是联络感情的方式，收了谁的“礼”，谁就是“自己人”。\u3000\u3000'
+            '不仅存在受贿问题，违反中央八项规定精神等违纪问题在该院内部也颇为严重。\u3000\u3000'
+            '对关键利益争夺的失败，让何青云心灰意冷。虽然在职称评定、干部提拔等方面仍有话语权，但他对主抓的工作丝毫提不起兴趣。在担任党委书记期间，医院内部党的建设严重缺失，院党委长期不召开党委会，几乎没有党内生活；全院480名党员有中高级职称的仅46名，占党员总数的9%；干部带病提拔，普外科主任姜德清提拔副院长不到半年就落马，另外多名科室主任的任命也备受质疑。\u3000\u3000'
+            '工作不尽责的同时，何青云开始在办公待遇上找平衡。为了配上自己党委书记的头衔，他长期违规占用排气量2.0升的高档轿车代步，且从2013年至2017年每月均领取上下班交通补贴。此外，他还独占两处办公用房，面积合计达57.58平方米，超出标准39.58平方米。\u3000\u3000'
+            '而杨庆松为了在“派头”上超过何青云，违规使用排气量2.8升的高档轿车，并占用办公用房面积合计达94.88平方米，超出标准76.88平方米。其他党政班子成员也有样学样，办公用房面积平均达36.5平方米，超出标准24.5平方米。\u3000\u3000'
+            '上梁不正，下梁必歪。杨庆松、何青云管理期间，该院干事创业的人越来越少，投机钻营的人越来越多，风气恶化导致人才大量流失，医务人员辞职、调出达176人，其中副高以上职称31人。\u3000\u3000'
+            '“必须彻底解决二院的问题，还患者一个干净的就医环境。”对此，该市纪委态度鲜明。在查处案件同时，进行了严肃问责，责成市卫计委党委向市委，市卫计委纪检组向市纪委分别作出书面检查；市纪委向市卫计委党委下发监督意见书；对市卫计委原党委书记、纪检组长、分管领导等相关责任人进行诫勉谈话或提醒谈话。\u3000\u3000'
+            '随着杨庆松、何青云“派系”的消失和相关问题被追究问责，二院这所建于1908年的百年老院逐渐恢复了往日生机。一年多来，该院全面加强党的建设，出台多项规章制度，议事决策坚决贯彻民主集中制，党政班子团结，党员干部职工人心思进。全院建成7个市级救治中心，新增市级重点专科11个，建成全省首家依托三甲实体医院运行的互联网医院。先后引进博士3名、硕士近30名；新增省“六大人才高峰”1名、“333工程”培养对象6人。就在不久前，2018全国美刀论坛由该院成功承办，中国工程院院士、北京清华长庚医院执行院长董家鸿等300多位国内顶级专家齐聚于此……\u3000\u3000'
+            '“前几年二院风气不好、管理很乱，我们宁愿多跑点路去别的医院看病，也不去二院。”一位住在二院附近的老人说，“现在听说变好了不少，这次检查我专门选了二院，不仅取消了不必要的检查项目，费用少了，服务还周到热情，我很满意。”\u3000\u3000'
+            '第六章 第四十九条 '
+            '在党内搞团团伙伙、结党营私、拉帮结派、培植个人势力等非组织活动，或者通过搞利益交换、为自己营造声势等活动捞取政治资本的，给予严重警告或者撤销党内职务处分；导致本地区、本部门、本单位政治生态恶化的，给予留党察看或者开除党籍处分。（莲轩 '
+            '龙淑娟）\u3000\u3000来源：中国纪检监察报责任编辑：桂强 ',
+ 'son_url': 'https://news.sina.com.cn/c/2018-11-02/doc-ihnfikve5896392.shtml',
+ 'sub_filename': './Data/新闻/国内',
+ 'title': ['医院院长书记自成两派:常在会议争座次文件争排名']}
+2018-11-02 13:18:44 [scrapy.crawler] INFO: Received SIGINT, shutting down gracefully. Send again to force 
+2018-11-02 13:18:44 [scrapy.core.engine] INFO: Closing spider (shutdown)
+2018-11-02 13:18:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://news.sina.com.cn/o/2018-11-02/doc-ihnfikve5849713.shtml> (referer: https://news.sina.com.cn/china/)
+2018-11-02 13:18:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://news.sina.com.cn/o/2018-11-02/doc-ihnfikve5849713.shtml>
+{'category': '新闻',
+ 'category_url': 'http://news.sina.com.cn/',
+ 'classify': '国内',
+ 'classify_url': 'http://news.sina.com.cn/china/',
+ 'content': '\u3000\u3000原标题：萨尔瓦多总统桑切斯访华 当面感谢中国粮食援助解旱灾之急\u3000\u3000'
+            '[文/观察者网史雨轩]\u3000\u3000'
+            '据新华社11月1日报道，中国国家主席习近平在北京会见了来访的萨尔瓦多总统桑切斯。习近平指出，中国愿在教育、医疗、供水、防灾等方面向萨方提供支持。桑切斯总统则当面感谢了前不久萨尔瓦多遭受旱灾后中方及时提供了粮食援助。\u3000\u3000'
+            '据商务部交流中心10月11日介绍，2018年6月下旬以来，萨尔瓦多遭遇严重旱灾，玉米、咖啡等农作物减产严重，中国政府决定向萨方紧急提供3000吨大米赈灾。9月30日，首批1000吨大米从上海港启运，预计11月初运抵阿卡胡特拉港，剩余大米计划于11月底前分两批发运。\u3000\u3000'
+            '英国《卫报》10月30日报道认为，目前成千上万的中美洲移民（即“大篷车”）通过墨西哥跋涉到美国，原因被描述为逃避帮派暴力或是极度贫困，但其实背后有一个关键因素：气候变化。\u3000\u3000'
+            '《食品和环境报告网》称，从墨西哥到巴拿马的走廊居住着1050万人口，绝大多数居住在危地马拉、萨尔瓦多、洪都拉斯和尼加瓜拉，有100万个家庭依靠自给自足的农业。\u3000\u3000'
+            '目前多年干旱和由此产生的饥饿已经成为了移民的主要驱动力。2014年和2015年，由于干旱农民颗粒无收。2018年的萨尔瓦多农民依旧很艰难，干旱导致收成减半。\u3000\u3000'
+            '近年来中美洲气候干燥炎热，伴随周期性干旱，农民们每年越来越难恢复损失。根据世界粮食计划署数据，截止2016年6月，这片“干旱走廊”有160万人粮食供应危险，300多万人需要人道主义援助。\u3000\u3000'
+            '《食品和环境报告网》称，2017年，来自萨尔瓦多，危地马拉和洪都拉斯的16万名移民在美国边境被捕，甚至超过墨西哥越境移民美国的被捕人数（12.8万人）。\u3000\u3000'
+            '据央视报道，11月1日下午，国家主席习近平在人民大会堂同萨尔瓦多总统桑切斯举行会谈，同时邀请桑切斯总统出席中国国际进口博览会。\u3000\u3000'
+            '桑切斯总统表示，萨尔瓦多非常高兴能够与中国建立外交关系，承认并恪守一个中国原则。萨尔瓦多感谢前不久遭受旱灾后，中国及时提供了粮食援助，并表示愿意加强同中国在经贸、农业、基础设施建设等领域合作，积极参加共建“一带一路”，助力萨尔瓦多发展。\u3000\u3000'
+            '习近平主席表示，愿在教育、医疗、供水、防灾等方面向萨方提供支持。中国愿提供更多奖学金生名额，将萨尔瓦多列为中国公民组团出境旅游目的地国。\u3000\u3000'
+            '桑切斯总统告诉习近平主席，“他代表萨尔瓦多人民向中国表示感激之情，对中萨恢复外交关系表示满意。”\u3000\u3000'
+            '8月21日，萨尔瓦多与中国建交。这是2018年以来继多米尼加、布基纳法索后第三个与台湾“一刀两断”的国家。\u3000\u3000'
+            '但随后，美国在当地时间23日晚竟然声称萨尔瓦多此举“威胁了整个美洲的经济状况和安全”，“美国将继续反对中国破坏两岸关系。”\u3000\u3000'
+            '据台湾东森新闻云报道，萨尔瓦多副外长玛洛金（Evelyn '
+            'Marroquin）当地时间24日表示，“美国自己也在40年前和台湾‘断交’，现在他们跟中国已建立了牢固的外交关系。”玛洛金说：“某种程度上来说我无法理解，为何美国现在会采取这样的立场，毕竟美国自己也跟中国有（外交）关系。我不认为这项决定会影响到我们与美国的关系与做出的承诺。”\u3000\u3000'
+            '据外交部10月4日报道，驻萨尔瓦多使馆临时代办欧箭虹在国庆69周年招待会上曾致辞。\u3000\u3000'
+            '欧箭虹表示，2018年上半年萨尔瓦多对中国出口达8000万美元，较去年同期激增20多倍。这显示出了中萨经贸合作的无限潜力和广阔空间，目前中萨建交为两国贸易、投资、基建、农业、旅游等各领域互利友好合作奠定了政治基础。\u3000\u3000'
+            '欧箭虹代办引用桑切斯总统宣布两国建交时电视讲话所受，“中萨建交是正确的一步，坚信这一步将使萨尔瓦多获益，给萨尔瓦多人民带来更多机遇与实实在在的好处。”责任编辑：桂强 ',
+ 'son_url': 'https://news.sina.com.cn/o/2018-11-02/doc-ihnfikve5849713.shtml',
+ 'sub_filename': './Data/新闻/国内',
+ 'title': ['中方援助3000吨大米救旱灾 这国总统访华当面感谢']}
+2018-11-02 13:18:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://news.sina.com.cn/c/2018-11-02/doc-ihnfikve5854181.shtml> (referer: https://news.sina.com.cn/china/)
+2018-11-02 13:18:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://news.sina.com.cn/c/2018-11-02/doc-ihnfikve5854181.shtml>
+{'category': '新闻',
+ 'category_url': 'http://news.sina.com.cn/',
+ 'classify': '国内',
+ 'classify_url': 'http://news.sina.com.cn/china/',
+ 'content': '\u3000\u3000原标题：万州公交坠江96小时\u3000\u3000本报记者 程维 周远征 '
+            '重庆万州报道\u3000\u300010月31日23∶28，重庆万州长江二桥坠江公交车被打捞出水。\u3000\u3000'
+            '坠江公交车车头露出水面后，站在打捞船上的工作人员脱帽、鞠躬默哀，救援水域停靠的船只均拉响汽笛。该公交车车身明显变形，车窗玻璃全部破裂。23∶41，坠江公交车车体全部离开水面。\u3000\u3000'
+            '此次救援历时接近4天。应急救援部对本次救援难度的评价是，此次救援为三峡库区蓄水以来难度最大：一是相对船只来说，公交车目标太小，难以精确定位；二是水过深导致作业方式复杂耗时，危险大；三是水底地形复杂，干扰物多；四是多地调集资源，多部门响应，需要多类型救援队伍配合行动。\u3000\u3000'
+            '10月30日晚，事故公交车内的黑匣子（行车数据记录仪）已找到，目前正由当地公安部门组织数据卡保护修复和数据解读。当地警方走访调查并综合接报警情况，以及查看沿途监控的上下乘客视频，初步核实失联人员15人（含公交车驾驶员1人）。\u3000\u3000'
+            '本次事故中的公交车从突然转向至坠江，仅耗时3秒。记者的调查显示，该桥的主要设计规范为1997年标准，另有多个设计标准为1985年前后的标准。\u3000\u3000'
+            '重庆市城市管理执法总队自10月29日起至2019年1月，将开展主城区城市桥涵设施管理运行突出违法违规行为监管执法专项行动。\u3000\u3000'
+            '“生命是一场无法回放的绝版电影，有些事不管你如何努力，回不去就是回不去了，就算真的回去了，你也会发现，一切已经面目全非，唯一能回去的，只是存于心底的记忆。”这句话，是2018年10月28日把一辆12米长的公交车从重庆市万州长江二桥上开进长江的公交车司机冉涌，在其一款K歌APP中的个人肖像图片中的手写体文字。\u3000\u3000'
+            '这一次，冉涌不只是回不去了，与他一并回不去的，还有14名乘客。\u3000\u3000'
+            '2018年10月28日凌晨5∶24，冉涌在该K歌APP中上传了一首自己演唱的《再回首》，这是他第二次唱这首曲子，他在上传该歌曲后发的动态称“没唱好”。这句话后，紧跟了一个闭了一只眼睛的可能代表调皮或卖萌可爱的表情。\u3000\u3000'
+            '他第一次唱这首歌的时间，是10月27日21∶44，他上传了他第一次唱的《再回首》，跟发的动态是“第一次唱”。\u3000\u3000'
+            '冉涌自2018年4月13日8∶17上传他在该APP第一次唱的《掌声响起来》以来，一共上传了29首歌曲，绝大部分是晚19时至21时左右上传的，只有几首是17时左右及23时左右上传的，另有2首为下午13时左右上传的。\u3000\u3000'
+            '这29首歌曲中，只有2018年10月28日凌晨5∶24上传的《再回首》，是深夜或凌晨在线K歌或上传。\u3000\u3000'
+            '据万州22路公交车位于该区“万达广场”起点站的指示牌显示，22路公交车的夏季第一班车的发车时间是6∶00，冬季发车时间是6∶30。\u3000\u3000'
+            '记者10月29日获得的三段关键视频显示，10月28日上午10∶02∶09，向北行驶的坠江公交车渝F27085在万州长江二桥上突然大角度左转弯，撞击向南行驶的红色小轿车后，径自冲破两道桥梁防护栏，于10∶02∶12坠入江中。\u3000\u3000'
+            '从突然急转弯至从桥面坠落全过程仅为3秒。\u3000\u3000'
+            '这三段有关公交车坠桥的关键视频，均未见该公交车减速、刹车等迹象，更未见此前外界猜测的可能因为爆胎或可能有人抢夺方向盘导致的车辆左右摇摆现象。\u3000\u3000'
+            '第一段录像由该公交车后向北行驶车辆的行车记录仪拍摄，画面相对模糊，时间戳不明显，但基本能反映该重庆市万州汽车运输（集团）有限责任公司万州公交分公司的22路环湖线公交车，行至事发点附近桥面时，突然大角度向左转向，越过桥中间的双黄线，撞击向南驶来的红色小轿车后，越过路肩上的低矮防护钢栏，并随即以接近90度切角的角度，冲入万州长江二桥上游。\u3000\u3000'
+            '第二段录像较为清晰，由向南行驶（与事故公交车相向行驶）的车辆行车记录仪拍摄，该段视频显示，公交车在10∶02∶09时，在万州长江二桥上突然大角度左转弯，撞击向南行驶的红色小轿车后，径自冲破两道桥梁防护栏，于10∶02∶12坠入江中。红色小轿车车头基本被全部撞毁，且车头被撞击得旋转了接近180度至朝北。\u3000\u3000'
+            '两道防护栏被该公交车瞬间冲破，事故车辆随即掉入距桥面67米的长江中。\u3000\u3000'
+            '第二段视频中的事故车辆，与记者10月28日晚在22路公交车起始站找到的同型公交车长度、外观基本一致。\u3000\u3000'
+            '10月29日，国家水上应急救援重庆长航队等单位的专业打捞船采用多波束声呐，发现一长约11米、宽约3米的物体。经过水下探测、定位，确定为坠江公交车，位于长江二桥上游约28米、水深约71米处。\u3000\u3000'
+            '第三段视频，救援队的水下摄像机显示，当时事故车辆在71米的水下，视频中依稀可见该车身上的广告招贴。\u3000\u3000'
+            '记者在调查中发现，重庆市因两山夹两江的地形地貌，决定了该市主城区及沿长江、嘉陵江区县，在交通解决方案上，多采用跨江大桥。截至2017年8月，长江重庆主城段已建成17座跨江大桥，4座大桥在建，待建14座。嘉陵江重庆主城段已建成25座跨江大桥，7座大桥在建，待建11座。\u3000\u3000'
+            '这些主城区内已建成的跨长江、嘉陵江的42座大桥中，均为逐年修建，其中年代最久远的重庆嘉陵江大桥于1958年修建。该市刚修葺一新的重庆嘉陵江大桥，在路肩上加装了2根上下排列的钢管防护栏。重庆嘉陵江大桥两侧的1.5米高人行护栏，依旧是钢筋混凝土立柱，加钢质防护栏。\u3000\u3000'
+            '万州长江二桥事故点的视频及照片显示，该桥的路肩上装有直径10厘米左右的钢管护栏，密集的矮立柱的底座为方形，有4颗膨胀螺钉紧固在路肩上。\u3000\u3000'
+            '2014年，北京市对该市桥梁防撞等级进行提升，按照道路设计时速80公里的速度撞击一般不会撞坏栏杆坠桥。该市2014年时计划该年度综合整治239座桥梁。\u3000\u3000'
+            '2018年10月24日正式通车的港珠澳大桥，其防撞护栏的等级，更是提升到了一个历史性的高度：旅游大巴以100公里时速撞栏，仍能保证车辆不突破防护栏掉落。\u3000\u3000'
+            '2017年底交通运输部全面修订《公路交通安全设施设计规范》，新规范中将波形护栏的“防撞等级”调整成了“防护等级”，并且在原有C级、B级、A级、SB级、SA级的防撞等级基础上增加了HB级和HA级的防撞等级。\u3000\u3000'
+            '重庆市城市管理执法总队自10月29日起至2019年1月，将开展主城区城市桥涵设施管理运行突出违法违规行为监管执法专项行动。\u3000\u3000'
+            '本次行动将“对城市桥涵设施管理运行情况进行全面摸底排查，建立工作台账，重点抓好涉及制度规范落实、设施安全管理的18项要求的摸底排查”。\u3000\u3000'
+            '落实制度规范共包括11项。包括是否按照规定编制城市桥梁养护维修的中长期规划和年度计划，或者未经批准即实施的；是否按照国家有关规定委托具有相应资质的桥梁检测评估机构对桥梁进行检测评估；是否按照规定制定城市桥梁的安全抢修预案方案；是否按照规定制定城市桥梁的安全应急预案方案；是否按照国家有关规定进行竣工验收，并建立完整的档案；是否按照规定对城市桥梁进行养护维修；是否按规定对特大型跨江大桥每五年至少进行一次安全检测，其他大桥每三年至少进行一次安全检测等等。\u3000\u3000'
+            '重庆市本次专项行动将重点围绕七项展开：擅自占用城市桥涵设施的行为；擅自在城市桥涵设施上搭建建（构）筑物的行为；擅自在城市桥梁上架设各类管线、设置广告等辅助物的行为；擅自移动、损坏城市桥涵设施和测量标志的行为；是否存在擅自在城市桥梁施工控制范围内从事河道疏浚、挖掘、打桩、地下管道顶进、爆破等作业的行为；是否存在擅自在城市大桥及其安全保护区内从事经营活动的行为；是否存在擅自在城市大桥及其安全保护区内倾倒垃圾、废渣和堆放物资的行为。\u3000\u3000'
+            '“生命是一场无法回放的绝版电影……”本次万州长江二桥22路公交车坠江重大事故的公交车司机冉涌的这句话，没有回放，只是重放。\u3000\u3000'
+            '2017年底交通运输部全面修订《公路交通安全设施设计规范》，新规范中将波形护栏的“防撞等级”调整成了“防护等级”，并且在原有C级、B级、A级、SB级、SA级的防撞等级基础上增加了HB级和HA级的防撞等级。新规范中明确了不同防撞等级的波形护栏应该根据公路的实际情况进行设置，相比2006年制订的《公路交通安全设施设计规范》，新规范对波形护栏的设置条件和防撞等级的确定更加具体化，操作性大大增加。\u3000\u3000'
+            '新规范中解释了波形护栏各个防撞等级对应的防护能量，其中C级波形护栏的防护能量是40kJ，B、Bm级波形护栏的防护能量是70kJ，A、Am级波形护栏的防护能量是160kJ，SB、SBm级波形护栏的防护能量是280kJ，SA、SAm级波形护栏的防护能量是400kJ，SS、SSm级波形护栏的防护能量是520kJ，HB级波形护栏的防护能量是640kJ，HA级波形护栏的防护能量是760kJ。根据使用经验表明，SS级波形护栏已经能够满足大多数国家公路对于护栏的设计需求，但是在一些主流车型为高重心的特大型客车（25t）、大型货车（40t、55t）的公路和那种车辆的翻车或冲断护栏将导致严重后果的桥梁路段，HB级和HA级护栏能发挥更好的防护作用。\u3000\u3000'
+            '最后需要说明的是，新规范中对于时速小于或等于40Km/h的三级、四级公路细化了波形护栏的选择，正常路段可以选用C级波形护栏，但在个别后果严重的情况才考虑使用B级和A级波形护栏。这样规定因地制宜地设置护栏，大大降低了国家对于交通安全设施方面的投入，降低了国家财政的负担，实施起来很具有长远性。责任编辑：桂强 ',
+ 'son_url': 'https://news.sina.com.cn/c/2018-11-02/doc-ihnfikve5854181.shtml',
+ 'sub_filename': './Data/新闻/国内',
+ 'title': ['万州公交坠江96小时：从急转弯到坠落全过程仅3秒']}
+2018-11-02 13:18:52 [scrapy.crawler] INFO: Received SIGINT twice, forcing unclean shutdown
+2018-11-02 13:19:41 [scrapy.utils.log] INFO: Scrapy 1.5.1 started (bot: sina)
+2018-11-02 13:19:41 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.5, cssselect 1.0.3, parsel 1.5.0, w3lib 1.19.0, Twisted 18.9.0, Python 3.6.6 (v3.6.6:4cf1f54eb7, Jun 27 2018, 02:47:15) [MSC v.1900 32 bit (Intel)], pyOpenSSL 18.0.0 (OpenSSL 1.1.0i  14 Aug 2018), cryptography 2.3.1, Platform Windows-10-10.0.17134-SP0
+2018-11-02 13:19:41 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'sina', 'DOWNLOAD_DELAY': 3, 'LOG_FILE': 'news.log', 'NEWSPIDER_MODULE': 'sina.spiders', 'SPIDER_MODULES': ['sina.spiders'], 'USER_AGENT': 'Mozilla/5.0 (Windows NT 6.1; rv,2.0.1) Gecko/20100101 Firefox/4.0.1'}
+2018-11-02 13:19:41 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2018-11-02 13:19:42 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-11-02 13:19:42 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-11-02 13:19:42 [scrapy.middleware] INFO: Enabled item pipelines:
+['sina.pipelines.SinaPipeline']
+2018-11-02 13:19:42 [scrapy.core.engine] INFO: Spider opened
+2018-11-02 13:19:42 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-11-02 13:19:42 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-11-02 13:19:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://news.sina.com.cn/guide/> (referer: None)
+2018-11-02 13:19:42 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'sports.sina.com.cn': <GET http://sports.sina.com.cn/nba/>
+2018-11-02 13:19:42 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'ent.sina.com.cn': <GET http://ent.sina.com.cn/gossip/>
+2018-11-02 13:19:42 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'finance.sina.com.cn': <GET http://finance.sina.com.cn/stock/>
+2018-11-02 13:19:42 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'tech.sina.com.cn': <GET http://tech.sina.com.cn/zl/>
+2018-11-02 13:19:42 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'zhuanlan.sina.com.cn': <GET http://zhuanlan.sina.com.cn/author/>
+2018-11-02 13:19:42 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'photo.sina.com.cn': <GET http://photo.sina.com.cn/>
+2018-11-02 13:19:42 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'fashion.sina.com.cn': <GET http://fashion.sina.com.cn/zl/>
+2018-11-02 13:19:42 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'eladies.sina.com.cn': <GET http://eladies.sina.com.cn/feel/>
+2018-11-02 13:19:42 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'collection.sina.com.cn': <GET http://collection.sina.com.cn/auction/>
+2018-11-02 13:19:42 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'auto.sina.com.cn': <GET http://auto.sina.com.cn/newcar/>
+2018-11-02 13:19:42 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'edu.sina.com.cn': <GET http://edu.sina.com.cn/zl/>
+2018-11-02 13:19:42 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'baby.sina.com.cn': <GET http://baby.sina.com.cn/yunchan/>
+2018-11-02 13:19:42 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'astro.sina.com.cn': <GET http://astro.sina.com.cn/luck/>
+2018-11-02 13:19:42 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'fo.sina.com.cn': <GET http://fo.sina.com.cn/intro/>
+2018-11-02 13:19:42 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'travel.sina.com.cn': <GET http://travel.sina.com.cn/lvyou/>
+2018-11-02 13:19:42 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'games.sina.com.cn': <GET http://games.sina.com.cn/newgame/>
+2018-11-02 13:19:42 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'weibo.com': <GET http://weibo.com/signup/signup.php>
+2018-11-02 13:19:42 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'blog.sina.com.cn': <GET http://blog.sina.com.cn/lm/ent/>
+2018-11-02 13:19:42 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'video.sina.com.cn': <GET http://video.sina.com.cn/news/>
+2018-11-02 13:19:42 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'mail.sina.com.cn': <GET http://mail.sina.com.cn/>
+2018-11-02 13:19:42 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'tools.sina.com.cn': <GET http://tools.sina.com.cn/map/beijinglukuang.html>
+2018-11-02 13:19:42 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'search.sina.com.cn': <GET http://search.sina.com.cn/>
+2018-11-02 13:19:45 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://news.sina.com.cn/china/> from <GET http://news.sina.com.cn/china/>
+2018-11-02 13:19:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://news.sina.com.cn/m/sinanews.html> (referer: http://news.sina.com.cn/guide/)
+2018-11-02 13:19:54 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (meta refresh) to <GET http://blog.sina.cn/> from <GET http://news.sina.com.cn/437/2008/0703/24.html>
+2018-11-02 13:19:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://news.sina.com.cn/zl/> (referer: http://news.sina.com.cn/guide/)
+2018-11-02 13:20:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://news.sina.com.cn/zt/> (referer: http://news.sina.com.cn/guide/)
+2018-11-02 13:20:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://news.sina.com.cn/hotnews/> (referer: http://news.sina.com.cn/guide/)
+2018-11-02 13:20:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://news.sina.com.cn/media/> (referer: http://news.sina.com.cn/guide/)
+2018-11-02 13:20:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://news.sina.com.cn/opinion/> (referer: http://news.sina.com.cn/guide/)
+2018-11-02 13:20:16 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://news.sina.com.cn/society/> from <GET http://news.sina.com.cn/society/>
+2018-11-02 13:20:20 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://news.sina.com.cn/world/> from <GET http://news.sina.com.cn/world/>
+2018-11-02 13:20:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://news.sina.com.cn/china/> (referer: http://news.sina.com.cn/guide/)
+2018-11-02 13:20:24 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'news.leju.com': <GET http://news.leju.com/2018-11-02/6463946598820133956.shtml>
+2018-11-02 13:20:27 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://blog.sina.cn/> from <GET http://blog.sina.cn/>
+2018-11-02 13:20:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://news.sina.com.cn/society/> (referer: http://news.sina.com.cn/guide/)
+2018-11-02 13:20:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://news.sina.com.cn/world/> (referer: http://news.sina.com.cn/guide/)
+2018-11-02 13:20:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://news.sina.com.cn/o/2018-11-02/doc-ihmutuea6250010.shtml> (referer: https://news.sina.com.cn/china/)
+2018-11-02 13:20:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://news.sina.com.cn/o/2018-11-02/doc-ihmutuea6250010.shtml>
+{'category': '新闻',
+ 'category_url': 'http://news.sina.com.cn/',
+ 'classify': '国内',
+ 'classify_url': 'http://news.sina.com.cn/china/',
+ 'content': '\u3000\u3000原标题：重庆公交车坠江原因查明 回顾86小时救援全过程\u3000\u3000中新网客户端11月2日电 '
+            '中新网记者从万州区委宣传部获悉，重庆公交车坠江原因查明，系乘客在乘坐公交车过程中与司机发生争吵，进而演化成肢体冲突。双方的互殴行为造成车辆失控，致使车辆与对向正常行驶的小轿车撞击后坠江，十五个鲜活的生命瞬间消逝。\u3000\u3000'
+            '10月28日10时许，重庆市万州区一辆公交车行驶至长江二桥时，与一辆小轿车相撞后坠江。根据调查事实，乘客刘某在乘坐公交车过程中，与正在驾车行驶中的公交车驾驶员冉某发生争吵，两次持手机攻击正在驾驶的公交车驾驶员冉某，实施危害车辆行驶安全的行为，严重危害车辆行驶安全。冉某作为公交车驾驶人员，在驾驶公交车行进中，与乘客刘某发生争吵，遭遇刘某攻击后，应当认识到还击及抓扯行为会严重危害车辆行驶安全，但未采取有效措施确保行车安全，将右手放开方向盘还击刘某，后又用右手格挡刘某的攻击，并与刘某抓扯，其行为严重违反公交车驾驶人职业规定。乘客刘某和驾驶员冉某之间的互殴行为，造成车辆失控，致使车辆与对向正常行驶的小轿车撞击后坠江，造成重大人员伤亡。\u3000\u3000'
+            '坠江事故发生后，外界一直高度关注对人员的搜救及车辆打捞工作。最终，经历近86个小时的救援工作，在10月31日深夜，坠江公交车体被整体打捞出水。以下为整个事件发生与救援过程：\u3000\u3000\u3000\u3000'
+            '10时许，重庆市万州区一辆公交车行驶至长江二桥时，与一辆小轿车相撞后坠江。经公安机关初步核实，失联人员15人。\u3000\u3000'
+            '下午5时许，@平安万州 '
+            '发布通报：经初步事故现场调查，系公交客车在行驶中突然越过中心实线，撞击对向正常行驶的小轿车后冲上路沿，撞断护栏，坠入江中。\u3000\u3000'
+            '事故发生后，国家应急管理部、公安部、交通运输部派员赶赴现场，全力指导协助地方做好人员搜救等处置工作。重庆市委、市政府主要领导高度重视，立即作出指示，亲自指挥，现场成立应急救援指挥部并全面开展救援。万州区委、区政府紧急组织公安、海事、消防、武警、长航等相关救援力量全力救援。\u3000\u3000'
+            '截止23时30分，救援人员打捞出2具遇难者遗体。\u3000\u3000\u3000\u3000'
+            '共有70多艘船只围绕公交车坠江水域全面开展搜救。\u3000\u3000'
+            '经过救援人员水下探测、定位，确定坠江公交车位于长江二桥上游约28米、水深约71米处。\u3000\u3000\u3000\u3000'
+            '上午6时许，潜水员开始下水作业。\u3000\u3000上午10时，第二批潜水员入水。\u3000\u3000'
+            '截至下午3时，三批下潜救援人员救捞出第7名遇难者遗体，并还发现2名遇难者遗体。\u3000\u3000'
+            '事故发生当天，万州公安局交巡警支队通报称，小轿车驾驶员邝某娟被警方控制。30日，记者致电邝某娟丈夫熊某，熊某告诉记者，目前警方已经解除对邝某娟的控制，妻子已经平安回家，一切都好。\u3000\u3000\u3000\u3000'
+            '交通运输部专业潜水员轮番下水，连夜作战。\u3000\u3000'
+            '0时50分，第五批下水的潜水员鲁玉鑫在失事公交车内找到了黑匣子（行车数据记录仪），打捞出水并交给当地公安部门。\u3000\u3000'
+            '11时31分，第七批潜水员下水，完成坠江公交车车尾吊带的安装。\u3000\u3000'
+            '14时46分，第八批潜水员下水，完成坠江公交车车头吊带的安装。\u3000\u3000'
+            '21时31分，开始对重庆万州坠江公交车进行起吊工作。\u3000\u3000'
+            '23时30分左右，成功将坠江公交车整体打捞出水。责任编辑：张申 ',
+ 'son_url': 'https://news.sina.com.cn/o/2018-11-02/doc-ihmutuea6250010.shtml',
+ 'sub_filename': './Data/新闻/国内',
+ 'title': ['重庆公交车坠江原因查明 回顾86小时救援全过程']}
+2018-11-02 13:20:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://news.sina.com.cn/c/2018-11-02/doc-ihnfikve6270088.shtml> (referer: https://news.sina.com.cn/china/)
+2018-11-02 13:20:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://news.sina.com.cn/c/2018-11-02/doc-ihnfikve6270088.shtml>
+{'category': '新闻',
+ 'category_url': 'http://news.sina.com.cn/',
+ 'classify': '国内',
+ 'classify_url': 'http://news.sina.com.cn/china/',
+ 'content': '\u3000\u3000原标题： 近日内蒙古政法系统多人落马\u3000\u3000法制晚报·看法新闻（记者 '
+            '庞岚）昨夜，内蒙古自治区公安厅副厅长、呼和浩特市副市长、呼和浩特市公安局局长李志斌被证实自杀，而近日内蒙古政法系统多人落马。\u3000\u3000'
+            '此外，今早多家媒体报道称中石油渤海钻探总经理、党委副书记周宗强于10月30日跳河自杀，中石油的一份内部讣告解释，周宗强系因工作压力和家事原因去世。\u3000\u3000'
+            '据新华社消息，内蒙古自治区公安厅副厅长、呼和浩特市副市长、呼和浩特市公安局局长李志斌11月1日自杀身亡。\u3000\u3000'
+            '李志斌，男，汉族，1967年12月出生，山西朔州人，中央党校大学学历，1987年8月参加工作，1993年10月加入中国共产党，现任内蒙古自治区公安厅党委委员、副厅长，呼和浩特市副市长、市政府党组成员，市公安局党委书记、局长、督察长。\u3000\u3000'
+            '简历显示，李志斌曾长期在包头工作。2002年到2009年先后任包头公安局东河分局副局长、党委副书记、政委，此后升任包头公安局副局长，并且兼任了城市管理行政执法局副局长。\u3000\u3000'
+            '2015年李志斌调任赤峰，任赤峰市副市长、市公安局党委书记、局长。不久后即升任内蒙古自治区公安厅党委委员、呼和浩特市政府党组成员、市公安局党委书记。2016年，进一步升任内蒙古公安厅副厅长，呼和浩特市副市长、市政府党组成员，市公安局党委书记、局长、督察长。\u3000\u3000'
+            '李志斌任赤峰市公安局党委书记、局长期间，恰好曾处置应对了内蒙古公安厅原厅长赵黎平涉嫌故意杀人一案。据多家媒体报道，此案被害人是一名28岁的女性，与赵黎平关系亲密。而当时中纪委的通报称赵黎平非法持有枪支、弹药并且与他人通奸。2016年11月11日上午，赵黎平因故意杀人罪，受贿罪，非法持有枪支、弹药罪，非法储存爆炸物罪被判处死刑，二审维持原判。2017年5月26日上午，赵黎平被执行死刑。\u3000\u3000'
+            '而就在刚刚过去的10月份，内蒙古反腐风劲吹，政法系统有多人落马。\u3000\u3000'
+            '10月25日，中纪委国家监委发布消息：内蒙古自治区人大常委会原副主任邢云涉嫌严重违纪违法，目前正接受中央纪委国家监委纪律审查和监察调查。简历显示，邢云曾任鄂尔多斯市委书记、包头市委书记、内蒙古自治区党委政法委书记等职。邢云任内蒙古政法委书记时，任内蒙古公安厅厅长的正是赵黎平。\u3000\u3000'
+            '10月30日，内蒙古自治区公安厅原党委委员、副厅长孟建伟被查。简历显示，2003年到2009年，孟建伟也在包头工作，先后任包头公安局局长、政法委书记等职，也就是说他此前曾是李志斌的上级。\u3000\u3000'
+            '10月29日，内蒙古纪委监委通报，内蒙古自治区呼和浩特市公安局党委委员、副局长杜宝君落马。简历显示，李志斌任包头公安局副局长期间，杜宝君有两年时间与其共事，也任包头公安局副局长。而李志斌升任呼市公安局党委书记、局长之后，杜宝君是其下属。\u3000\u3000'
+            '据多家媒体报道，中国石油集团渤海钻探工程有限公司总经理、党委副书记周宗强于10月30日跳河自杀。据《财新》报道，中石油的一份内部讣告解释，周宗强系因工作压力和家事原因去世。\u3000\u3000'
+            '周宗强最近一次公开露面是在10月26日，当日他到渤海钻探井下作业分公司参加QHSE（质量健康安全环保）审核定级末次会，并发表了讲话。工商信息显示，周宗强目前仍为渤海钻探的法定代表人。\u3000\u3000'
+            '公开资料显示，现年54岁的周宗强曾长期供职于中石油长庆油田，2017年才出任渤海钻探总经理。\u3000\u3000'
+            '2003年起，周宗强担任中石油长庆油田分公司副总理、安全总监。2013年2月起，兼任陕西延安石油天然气有限公司总经理、党委副书记。\u3000\u3000'
+            '官网资料显示，周宗强长期供职的长庆油田是隶属于中国石油天然气股份有限公司的地区性油田公司，总部设在陕西省西安市，工作区域在鄂尔多斯盆地，公司拥有资产总额390.51亿元。\u3000\u3000'
+            '因为长庆油田与延长石油在陕北的矿权冲突由来已久，为解决长庆油田和延长石油的矿权争议，2012年7月，中石油天然气股份有限公司和延长石油集团公司共同出资组建成立了陕西延安石油天然气有限公司，公司注册资本20亿元，中石油持股51%，延长石油出资持股49%。而周宗强正是在该公司成立后不久，兼任其总经理、党委副书记。\u3000\u3000'
+            '据界面新闻报道，如今这家公司名存实亡。就在今年9月，长庆油田和延长石油因为矿权纠纷发生冲突，长庆油田护矿队与延长石油雇佣人员对峙，有人员受伤，而且这已是长庆油田和延长石油今年第三次在枣林坪镇中山村发生冲突。责任编辑：桂强 ',
+ 'son_url': 'https://news.sina.com.cn/c/2018-11-02/doc-ihnfikve6270088.shtml',
+ 'sub_filename': './Data/新闻/国内',
+ 'title': ['内蒙古公安厅副厅长自杀 当地政法系统多人落马']}
+2018-11-02 13:20:42 [scrapy.extensions.logstats] INFO: Crawled 12 pages (at 12 pages/min), scraped 2 items (at 2 items/min)
+2018-11-02 13:20:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://news.sina.com.cn/c/2018-11-02/doc-ihmutuea6217982.shtml> (referer: https://news.sina.com.cn/china/)
+2018-11-02 13:20:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://news.sina.com.cn/c/2018-11-02/doc-ihmutuea6217982.shtml>
+{'category': '新闻',
+ 'category_url': 'http://news.sina.com.cn/',
+ 'classify': '国内',
+ 'classify_url': 'http://news.sina.com.cn/china/',
+ 'content': '\u3000\u3000原标题：内蒙古公安厅副厅长，呼和浩特市副市长、缢亡，留遗书称抑郁严重\u3000\u3000'
+            '从内蒙古公安厅刑侦部门获悉，2018年11月1日凌晨，内蒙古公安厅副厅长、呼和浩特市副市长、公安局局长李志斌在呼和浩特市公安局休息室内缢亡。经公安机关勘查调查勘验，初步排除他杀可能。现场遗书称其一直被抑郁症困扰，每天都靠高效安眠药才能入睡。\u3000\u3000'
+            '来源：内蒙古新闻网\u3000\u3000'
+            '据新华社消息，记者从呼和浩特市有关方面获悉，内蒙古自治区公安厅副厅长、呼和浩特市副市长、呼和浩特市公安局局长李志斌11月1日自杀身亡。\u3000\u3000'
+            '在此之前，10月30日，内蒙古自治区公安厅原党委委员、副厅长孟建伟（正厅级）被查；10月29日，内蒙古纪委监委通报，内蒙古自治区呼和浩特市公安局党委委员、副局长杜宝君落马。\u3000\u3000'
+            '李志斌此前曾任赤峰赤峰市副市长、市公安局党委书记、局长。期间曾处置应对了“3·20”内蒙古政协原副主席、公安厅原厅长赵黎平涉嫌故意杀人一案。\u3000\u3000'
+            '2015年3月20日，已退休的赵黎平在赤峰市境内涉嫌故意杀人，被公安机关羁押。多家媒体报道称，被害人是一名28岁的女性，家住赤峰，与赵关系较为亲密。7月31日，中纪委通报称，“经查，赵黎平严重违反廉洁自律规定，收受礼金；利用职务上的便利，在干部选拔任用、企业经营等方面为他人谋取利益，收受贿赂；非法持有枪支、弹药；严重违反社会主义道德，与他人通奸。”\u3000\u3000'
+            '2015年，李志斌卸任内蒙古赤峰公安局长时，自治区公安厅党委委员、政治部主任徐晓波表示，“李志斌同志在赤峰工作期间，紧紧围绕公安改革和‘四项建设’谋划推进工作，带领广大民警妥善处置应对了‘3·20’案件等一批重大案事件，全市命案侦破率达100%；着力用‘六位一体’新机制打造了攻防兼备立体多元的治安防控新体系，‘全国百城禁毒会战’等工作走在了全区乃至全国前列。”\u3000\u3000'
+            '男，汉族，1967年12月出生，山西朔州人，中央党校大学学历，1987年8月参加工作，1993年10月加入中国共产党，现任内蒙古自治区公安厅党委委员、副厅长，呼和浩特市副市长、市政府党组成员，市公安局党委书记、局长、督察长。\u3000\u3000'
+            '1987.08—2002.07 '
+            '内蒙古自治区包头市公安局石拐分局石拐派出所民警、刑警队技术员、刑警队副队长、刑警队队长、副局长（其间：1998.08—2000.12中央党校函授学院政法专业学习）\u3000\u3000'
+            '2002.07—2006.05 内蒙古自治区包头市公安局东河分局副局长\u3000\u30002006.05—2009.01 '
+            '内蒙古自治区包头市公安局东河分局党委副书记、政委（副处级）\u3000\u30002009.01—2009.08 '
+            '内蒙古自治区包头市公安局副局长\u3000\u30002009.08—2011.02 '
+            '内蒙古自治区包头市公安局副局长兼市城市管理行政执法局副局长\u3000\u30002011.02—2012.12 '
+            '内蒙古自治区包头市公安局副局长兼市城市管理行政执法局副局长（正处级）\u3000\u30002012.12—2015.01 '
+            '内蒙古自治区包头市公安局党委副书记、副局长兼市城市管理行政执法局副局长（正处级）\u3000\u3000'
+            '2015.01—2015.12 内蒙古自治区赤峰市副市长、市公安局党委书记、局长\u3000\u3000'
+            '2015.12—2016.01 内蒙古自治区公安厅党委委员、呼和浩特市政府党组成员、市公安局党委书记\u3000\u3000'
+            '2016.01— '
+            '内蒙古自治区公安厅党委委员、副厅长，呼和浩特市副市长、市政府党组成员，市公安局党委书记、局长、督察长责任编辑：桂强 ',
+ 'son_url': 'https://news.sina.com.cn/c/2018-11-02/doc-ihmutuea6217982.shtml',
+ 'sub_filename': './Data/新闻/国内',
+ 'title': ['内蒙古公安厅副厅长李志斌缢亡 留遗书称抑郁严重']}
+2018-11-02 13:20:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://news.sina.com.cn/c/2018-11-02/doc-ihnfikve5896392.shtml> (referer: https://news.sina.com.cn/china/)
+2018-11-02 13:20:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://news.sina.com.cn/c/2018-11-02/doc-ihnfikve5896392.shtml>
+{'category': '新闻',
+ 'category_url': 'http://news.sina.com.cn/',
+ 'classify': '国内',
+ 'classify_url': 'http://news.sina.com.cn/china/',
+ 'content': '\u3000\u3000原标题：如此“内耗”为哪般\u3000\u3000'
+            '看似是工作上的“老搭档”，实际却是水火不容的“死对头”。江苏省连云港市第二人民医院原党委副书记、院长杨庆松和原党委书记何青云在工作中不仅带头违纪，更在单位内部搞团团伙伙、拉帮结派，把原本治病救人的百年老院弄得乌烟瘴气、混乱不堪——\u3000\u3000'
+            '“我是院长，我们医院的人都得听我的！”\u3000\u3000“我是党委书记，必须我说了算！”\u3000\u3000'
+            '说这两句话的分别是江苏省连云港市第二人民医院原党委副书记、院长杨庆松和原党委书记何青云。\u3000\u3000'
+            '2017年6月，杨庆松因涉嫌严重违纪，被连云港市纪委立案审查，后被开除党籍公职，其涉嫌犯罪问题线索移送司法机关处理，目前已被依法提起公诉。就在杨庆松被查同期，何青云也因违反中央八项规定精神和违反工作纪律，受到党内严重警告处分，并被免职。\u3000\u3000'
+            '杨庆松、何青云二人，看似是工作上的“老搭档”，实际中却是水火不容的“死对头”。两人不仅带头违纪，更在单位内部搞团团伙伙、结党营私、拉帮结派，把原本治病救人的医院弄得乌烟瘴气、混乱不堪，严重破坏了单位政治生态。随着二人相继被查，一出“各立门户”的闹剧戛然而止。\u3000\u3000'
+            '2017年年初，连云港市委巡察组对该市卫计委开展巡察，发现反映该市第二人民医院问题的信访举报较多。2017年5月，市委巡察组杀出“回马枪”，进驻该院开展为期半个月的机动式巡察。\u3000\u3000'
+            '“院长、书记长期不和，自成两派，各有各的小圈子。”据知情人介绍，杨庆松、何青云积怨甚深，而最早的起源竟是一个会议的座次排列。当年，杨庆松担任院长不久，上级领导到医院调研，在会议座次安排上，杨庆松认为自己是行政一把手，应排前面；何青云则认为自己是党委书记，更该居于首位，两人发生争执，就此结下了“梁子”。\u3000\u3000'
+            '这次之后，两人经常在会议上争座次、文件上争排名。为了打压对方，杨庆松、何青云各自在院内拉山头，想方设法将班子成员、中层骨干拉入己方一派。杨庆松甚至以“院长办公会”名义取代“院党委会”，导致本该党委研究决策的“三重一大”事项，直接由“院长办公会”拍板，参会人员大多是杨庆松认可的“自己人”。\u3000\u3000'
+            '为扩充势力，杨庆松以方便工作为名，申请将“老部下”——时任市第一人民医院医务处长的刘晓峰调至二院任副院长，并分管办公室、设备采购等重要部门，惹来诸多非议。刘晓峰来后，无论从工作分工还是经费使用上，都成为班子中制衡何青云的重要力量。有一次，市卫计委党委下发中心组学习计划至二院，刘晓峰故意绕过何青云，将文件呈杨庆松签批落实，何青云得知后恼怒万分，要来文件在签批单上提笔大骂。此事闹到全院尽人皆知。\u3000\u3000'
+            '面对杨庆松一派的“欺压”，何青云一派积极予以“反击”。2016年9月，该院研究中层干部竞聘事宜，何青云多次否决杨庆松方案，两人进而当众指责对方，差点动起手来。不仅如此，巡察组进驻后，何青云等人更指使多名干部职工故意捏造事实，轮番到巡察组举报杨庆松，目的就是扳倒杨庆松让自己“掌权”。\u3000\u3000'
+            '此外，巡察组在查阅资料时也发现，无论是会议决策、还是民主测评，两人意见的支持率总是6：3，9名中层干部中支持杨庆松的有6人，主要以医院业务科室为主；支持何青云的有3人，均是其分管条线人员，“两派”之间你争我夺，内耗严重。\u3000\u3000'
+            '早在2017年3月，市第二人民医院原工会主席、总会计师、财务处处长范国华涉嫌严重违纪接受调查；同年6月，杨庆松落马；8月，原副院长刘晓峰被立案审查。而此前，原副院长姜德清、原院医学检验科主任周彦均因受贿犯罪被判刑。随着一窝“硕鼠”接连被查，权力斗争背后的秘密被揭开。\u3000\u3000'
+            '“二院内部的斗争，看似是对领导权的争夺，但实质却是利益在作祟。谁有主导权，谁就能获得更多利益。”参与查办杨庆松案件的办案人员这样总结。\u3000\u3000'
+            '作为权力斗争中占据优势的一方，杨庆松“一派”长期把控着药品、耗材、设备采购和基建工程的“话语权”，这些事项的决策，几乎不上会研究，即使上会研究也是走走形式。而这样不受约束的权力，必然导致腐败问题发生。经查，2012年以来，杨庆松等人先后利用职务上的便利为他人谋取利益，收受药品、耗材、设备供应商以及金融机构人员赠送的“好处”百万余元。\u3000\u3000'
+            '而杨庆松“吃肉”，其他人跟着“喝汤”。2013年，某医疗公司经理邹某希望本公司代理的医疗设备能够投放二院，分别向杨庆松、刘晓峰行贿15万元、10万元。作为回报，该设备顺利进入该院，购入价及后期维护费用竟高达9000余万元，而此前当地另一家医院购入同款设备，购入价仅为6000余万元，中间差价给医院带来了巨额损失。\u3000\u3000'
+            '同时，作为一派“领头人”，杨庆松不仅收受外人“馈赠”，对“自己人”也来者不拒。2013年至2016年，杨庆松先后9次接受范国华赠送价值4.4万元的购物卡，4次收受某中层干部共计4万元帮助其进行职务调整及其他请托事项，2次收受某科主任价值4000元购物卡……\u3000\u3000'
+            '“这些年他们跟着我也得了不少好处，不接受反而感到疏远了。”杨庆松坦言，他把接受下属馈赠，更多当作是联络感情的方式，收了谁的“礼”，谁就是“自己人”。\u3000\u3000'
+            '不仅存在受贿问题，违反中央八项规定精神等违纪问题在该院内部也颇为严重。\u3000\u3000'
+            '对关键利益争夺的失败，让何青云心灰意冷。虽然在职称评定、干部提拔等方面仍有话语权，但他对主抓的工作丝毫提不起兴趣。在担任党委书记期间，医院内部党的建设严重缺失，院党委长期不召开党委会，几乎没有党内生活；全院480名党员有中高级职称的仅46名，占党员总数的9%；干部带病提拔，普外科主任姜德清提拔副院长不到半年就落马，另外多名科室主任的任命也备受质疑。\u3000\u3000'
+            '工作不尽责的同时，何青云开始在办公待遇上找平衡。为了配上自己党委书记的头衔，他长期违规占用排气量2.0升的高档轿车代步，且从2013年至2017年每月均领取上下班交通补贴。此外，他还独占两处办公用房，面积合计达57.58平方米，超出标准39.58平方米。\u3000\u3000'
+            '而杨庆松为了在“派头”上超过何青云，违规使用排气量2.8升的高档轿车，并占用办公用房面积合计达94.88平方米，超出标准76.88平方米。其他党政班子成员也有样学样，办公用房面积平均达36.5平方米，超出标准24.5平方米。\u3000\u3000'
+            '上梁不正，下梁必歪。杨庆松、何青云管理期间，该院干事创业的人越来越少，投机钻营的人越来越多，风气恶化导致人才大量流失，医务人员辞职、调出达176人，其中副高以上职称31人。\u3000\u3000'
+            '“必须彻底解决二院的问题，还患者一个干净的就医环境。”对此，该市纪委态度鲜明。在查处案件同时，进行了严肃问责，责成市卫计委党委向市委，市卫计委纪检组向市纪委分别作出书面检查；市纪委向市卫计委党委下发监督意见书；对市卫计委原党委书记、纪检组长、分管领导等相关责任人进行诫勉谈话或提醒谈话。\u3000\u3000'
+            '随着杨庆松、何青云“派系”的消失和相关问题被追究问责，二院这所建于1908年的百年老院逐渐恢复了往日生机。一年多来，该院全面加强党的建设，出台多项规章制度，议事决策坚决贯彻民主集中制，党政班子团结，党员干部职工人心思进。全院建成7个市级救治中心，新增市级重点专科11个，建成全省首家依托三甲实体医院运行的互联网医院。先后引进博士3名、硕士近30名；新增省“六大人才高峰”1名、“333工程”培养对象6人。就在不久前，2018全国美刀论坛由该院成功承办，中国工程院院士、北京清华长庚医院执行院长董家鸿等300多位国内顶级专家齐聚于此……\u3000\u3000'
+            '“前几年二院风气不好、管理很乱，我们宁愿多跑点路去别的医院看病，也不去二院。”一位住在二院附近的老人说，“现在听说变好了不少，这次检查我专门选了二院，不仅取消了不必要的检查项目，费用少了，服务还周到热情，我很满意。”\u3000\u3000'
+            '第六章 第四十九条 '
+            '在党内搞团团伙伙、结党营私、拉帮结派、培植个人势力等非组织活动，或者通过搞利益交换、为自己营造声势等活动捞取政治资本的，给予严重警告或者撤销党内职务处分；导致本地区、本部门、本单位政治生态恶化的，给予留党察看或者开除党籍处分。（莲轩 '
+            '龙淑娟）\u3000\u3000来源：中国纪检监察报责任编辑：桂强 ',
+ 'son_url': 'https://news.sina.com.cn/c/2018-11-02/doc-ihnfikve5896392.shtml',
+ 'sub_filename': './Data/新闻/国内',
+ 'title': ['医院院长书记自成两派:常在会议争座次文件争排名']}
+2018-11-02 13:20:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://news.sina.com.cn/o/2018-11-02/doc-ihnfikve5849713.shtml> (referer: https://news.sina.com.cn/china/)
+2018-11-02 13:20:52 [scrapy.crawler] INFO: Received SIGINT, shutting down gracefully. Send again to force 
+2018-11-02 13:20:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://news.sina.com.cn/o/2018-11-02/doc-ihnfikve5849713.shtml>
+{'category': '新闻',
+ 'category_url': 'http://news.sina.com.cn/',
+ 'classify': '国内',
+ 'classify_url': 'http://news.sina.com.cn/china/',
+ 'content': '\u3000\u3000原标题：萨尔瓦多总统桑切斯访华 当面感谢中国粮食援助解旱灾之急\u3000\u3000'
+            '[文/观察者网史雨轩]\u3000\u3000'
+            '据新华社11月1日报道，中国国家主席习近平在北京会见了来访的萨尔瓦多总统桑切斯。习近平指出，中国愿在教育、医疗、供水、防灾等方面向萨方提供支持。桑切斯总统则当面感谢了前不久萨尔瓦多遭受旱灾后中方及时提供了粮食援助。\u3000\u3000'
+            '据商务部交流中心10月11日介绍，2018年6月下旬以来，萨尔瓦多遭遇严重旱灾，玉米、咖啡等农作物减产严重，中国政府决定向萨方紧急提供3000吨大米赈灾。9月30日，首批1000吨大米从上海港启运，预计11月初运抵阿卡胡特拉港，剩余大米计划于11月底前分两批发运。\u3000\u3000'
+            '英国《卫报》10月30日报道认为，目前成千上万的中美洲移民（即“大篷车”）通过墨西哥跋涉到美国，原因被描述为逃避帮派暴力或是极度贫困，但其实背后有一个关键因素：气候变化。\u3000\u3000'
+            '《食品和环境报告网》称，从墨西哥到巴拿马的走廊居住着1050万人口，绝大多数居住在危地马拉、萨尔瓦多、洪都拉斯和尼加瓜拉，有100万个家庭依靠自给自足的农业。\u3000\u3000'
+            '目前多年干旱和由此产生的饥饿已经成为了移民的主要驱动力。2014年和2015年，由于干旱农民颗粒无收。2018年的萨尔瓦多农民依旧很艰难，干旱导致收成减半。\u3000\u3000'
+            '近年来中美洲气候干燥炎热，伴随周期性干旱，农民们每年越来越难恢复损失。根据世界粮食计划署数据，截止2016年6月，这片“干旱走廊”有160万人粮食供应危险，300多万人需要人道主义援助。\u3000\u3000'
+            '《食品和环境报告网》称，2017年，来自萨尔瓦多，危地马拉和洪都拉斯的16万名移民在美国边境被捕，甚至超过墨西哥越境移民美国的被捕人数（12.8万人）。\u3000\u3000'
+            '据央视报道，11月1日下午，国家主席习近平在人民大会堂同萨尔瓦多总统桑切斯举行会谈，同时邀请桑切斯总统出席中国国际进口博览会。\u3000\u3000'
+            '桑切斯总统表示，萨尔瓦多非常高兴能够与中国建立外交关系，承认并恪守一个中国原则。萨尔瓦多感谢前不久遭受旱灾后，中国及时提供了粮食援助，并表示愿意加强同中国在经贸、农业、基础设施建设等领域合作，积极参加共建“一带一路”，助力萨尔瓦多发展。\u3000\u3000'
+            '习近平主席表示，愿在教育、医疗、供水、防灾等方面向萨方提供支持。中国愿提供更多奖学金生名额，将萨尔瓦多列为中国公民组团出境旅游目的地国。\u3000\u3000'
+            '桑切斯总统告诉习近平主席，“他代表萨尔瓦多人民向中国表示感激之情，对中萨恢复外交关系表示满意。”\u3000\u3000'
+            '8月21日，萨尔瓦多与中国建交。这是2018年以来继多米尼加、布基纳法索后第三个与台湾“一刀两断”的国家。\u3000\u3000'
+            '但随后，美国在当地时间23日晚竟然声称萨尔瓦多此举“威胁了整个美洲的经济状况和安全”，“美国将继续反对中国破坏两岸关系。”\u3000\u3000'
+            '据台湾东森新闻云报道，萨尔瓦多副外长玛洛金（Evelyn '
+            'Marroquin）当地时间24日表示，“美国自己也在40年前和台湾‘断交’，现在他们跟中国已建立了牢固的外交关系。”玛洛金说：“某种程度上来说我无法理解，为何美国现在会采取这样的立场，毕竟美国自己也跟中国有（外交）关系。我不认为这项决定会影响到我们与美国的关系与做出的承诺。”\u3000\u3000'
+            '据外交部10月4日报道，驻萨尔瓦多使馆临时代办欧箭虹在国庆69周年招待会上曾致辞。\u3000\u3000'
+            '欧箭虹表示，2018年上半年萨尔瓦多对中国出口达8000万美元，较去年同期激增20多倍。这显示出了中萨经贸合作的无限潜力和广阔空间，目前中萨建交为两国贸易、投资、基建、农业、旅游等各领域互利友好合作奠定了政治基础。\u3000\u3000'
+            '欧箭虹代办引用桑切斯总统宣布两国建交时电视讲话所受，“中萨建交是正确的一步，坚信这一步将使萨尔瓦多获益，给萨尔瓦多人民带来更多机遇与实实在在的好处。”责任编辑：桂强 ',
+ 'son_url': 'https://news.sina.com.cn/o/2018-11-02/doc-ihnfikve5849713.shtml',
+ 'sub_filename': './Data/新闻/国内',
+ 'title': ['中方援助3000吨大米救旱灾 这国总统访华当面感谢']}
+2018-11-02 13:20:52 [scrapy.core.engine] INFO: Closing spider (shutdown)
+2018-11-02 13:20:55 [scrapy.crawler] INFO: Received SIGINT twice, forcing unclean shutdown
+2018-11-02 13:40:26 [scrapy.utils.log] INFO: Scrapy 1.5.1 started (bot: sina)
+2018-11-02 13:40:26 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.5, cssselect 1.0.3, parsel 1.5.0, w3lib 1.19.0, Twisted 18.9.0, Python 3.6.6 (v3.6.6:4cf1f54eb7, Jun 27 2018, 02:47:15) [MSC v.1900 32 bit (Intel)], pyOpenSSL 18.0.0 (OpenSSL 1.1.0i  14 Aug 2018), cryptography 2.3.1, Platform Windows-10-10.0.17134-SP0
+2018-11-02 13:40:26 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'sina', 'DOWNLOAD_DELAY': 3, 'LOG_FILE': 'news.log', 'NEWSPIDER_MODULE': 'sina.spiders', 'SPIDER_MODULES': ['sina.spiders'], 'USER_AGENT': 'Mozilla/5.0 (Windows NT 6.1; rv,2.0.1) Gecko/20100101 Firefox/4.0.1'}
+2018-11-02 13:40:29 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2018-11-02 13:40:30 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-11-02 13:40:30 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-11-02 13:40:30 [scrapy.middleware] INFO: Enabled item pipelines:
+['sina.pipelines.SinaPipeline']
+2018-11-02 13:40:30 [scrapy.core.engine] INFO: Spider opened
+2018-11-02 13:40:31 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-11-02 13:40:31 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-11-02 13:40:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://news.sina.com.cn/guide/> (referer: None)
+2018-11-02 13:40:32 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'sports.sina.com.cn': <GET http://sports.sina.com.cn/nba/>
+2018-11-02 13:40:32 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'ent.sina.com.cn': <GET http://ent.sina.com.cn/gossip/>
+2018-11-02 13:40:32 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'finance.sina.com.cn': <GET http://finance.sina.com.cn/stock/>
+2018-11-02 13:40:32 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'tech.sina.com.cn': <GET http://tech.sina.com.cn/zl/>
+2018-11-02 13:40:32 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'zhuanlan.sina.com.cn': <GET http://zhuanlan.sina.com.cn/author/>
+2018-11-02 13:40:32 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'photo.sina.com.cn': <GET http://photo.sina.com.cn/>
+2018-11-02 13:40:32 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'fashion.sina.com.cn': <GET http://fashion.sina.com.cn/zl/>
+2018-11-02 13:40:32 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'eladies.sina.com.cn': <GET http://eladies.sina.com.cn/feel/>
+2018-11-02 13:40:32 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'collection.sina.com.cn': <GET http://collection.sina.com.cn/auction/>
+2018-11-02 13:40:32 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'auto.sina.com.cn': <GET http://auto.sina.com.cn/newcar/>
+2018-11-02 13:40:32 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'edu.sina.com.cn': <GET http://edu.sina.com.cn/zl/>
+2018-11-02 13:40:32 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'baby.sina.com.cn': <GET http://baby.sina.com.cn/yunchan/>
+2018-11-02 13:40:32 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'astro.sina.com.cn': <GET http://astro.sina.com.cn/luck/>
+2018-11-02 13:40:32 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'fo.sina.com.cn': <GET http://fo.sina.com.cn/intro/>
+2018-11-02 13:40:32 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'travel.sina.com.cn': <GET http://travel.sina.com.cn/lvyou/>
+2018-11-02 13:40:32 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'games.sina.com.cn': <GET http://games.sina.com.cn/newgame/>
+2018-11-02 13:40:32 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'weibo.com': <GET http://weibo.com/signup/signup.php>
+2018-11-02 13:40:32 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'blog.sina.com.cn': <GET http://blog.sina.com.cn/lm/ent/>
+2018-11-02 13:40:32 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'video.sina.com.cn': <GET http://video.sina.com.cn/news/>
+2018-11-02 13:40:32 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'mail.sina.com.cn': <GET http://mail.sina.com.cn/>
+2018-11-02 13:40:32 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'tools.sina.com.cn': <GET http://tools.sina.com.cn/map/beijinglukuang.html>
+2018-11-02 13:40:32 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'search.sina.com.cn': <GET http://search.sina.com.cn/>
+2018-11-02 13:40:35 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://news.sina.com.cn/china/> from <GET http://news.sina.com.cn/china/>
+2018-11-02 13:40:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://news.sina.com.cn/m/sinanews.html> (referer: http://news.sina.com.cn/guide/)
+2018-11-02 13:40:42 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (meta refresh) to <GET http://blog.sina.cn/> from <GET http://news.sina.com.cn/437/2008/0703/24.html>
+2018-11-02 13:40:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://news.sina.com.cn/zl/> (referer: http://news.sina.com.cn/guide/)
+2018-11-02 13:40:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://news.sina.com.cn/zt/> (referer: http://news.sina.com.cn/guide/)
+2018-11-02 13:40:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://news.sina.com.cn/hotnews/> (referer: http://news.sina.com.cn/guide/)
+2018-11-02 13:40:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://news.sina.com.cn/media/> (referer: http://news.sina.com.cn/guide/)
+2018-11-02 13:41:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://news.sina.com.cn/opinion/> (referer: http://news.sina.com.cn/guide/)
+2018-11-02 13:41:02 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://news.sina.com.cn/society/> from <GET http://news.sina.com.cn/society/>
+2018-11-02 13:41:06 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://news.sina.com.cn/world/> from <GET http://news.sina.com.cn/world/>
+2018-11-02 13:41:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://news.sina.com.cn/china/> (referer: http://news.sina.com.cn/guide/)
+2018-11-02 13:41:11 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'news.leju.com': <GET http://news.leju.com/2018-11-02/6463946598820133956.shtml>
+2018-11-02 13:41:15 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://blog.sina.cn/> from <GET http://blog.sina.cn/>
+2018-11-02 13:41:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://news.sina.com.cn/society/> (referer: http://news.sina.com.cn/guide/)
+2018-11-02 13:41:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://news.sina.com.cn/world/> (referer: http://news.sina.com.cn/guide/)
+2018-11-02 13:41:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://news.sina.com.cn/c/2018-11-02/doc-ihmutuea6284595.shtml> (referer: https://news.sina.com.cn/china/)
+2018-11-02 13:41:24 [scrapy.core.scraper] ERROR: Error processing {'category': '新闻',
+ 'category_url': 'http://news.sina.com.cn/',
+ 'classify': '国内',
+ 'classify_url': 'http://news.sina.com.cn/china/',
+ 'content': '\u3000\u3000原标题：报告：中国去年新增亿万富翁超美国近两倍 已成财富创造最快国家\u3000\u3000'
+            '据外电报道，瑞士联合银行（UBS，简称瑞银） '
+            '和咨询公司普华永道（PwC）日前发布一份《2018亿万富翁观察报告》显示，去年全球共有199位新的亿万富翁诞生，其中近三分之一是通过某种形式的创新积累财富的，其余则是通过扩大亚太地区的业务规模实现的。\u3000\u3000'
+            '报告显示，2017年，全球亿万富翁的总财富增长了19%，达到8.9万亿美元，当年新增亿万富翁199位，其中89位来自中国，使得中国亿万富翁人数增加到了373人。而2006年，该数字尚且为16人。\u3000\u3000'
+            '报告还称，中国庞大的人口基数、技术创新能力和生产率增长以及政府的支持，正为个人创造财富提供前所未有的机会。中国已经取代美国，成为创造财富速度最快的国家。\u3000\u3000'
+            '报告访问的一位中国富豪认为，中国政府的政策持续支持了企业家的财富创造之路，而城市化和商业模式的变革更造就了一批有实力的新兴企业家。\u3000\u3000\u3000\u3000\u3000\u3000'
+            '值得注意的是，全球2017年新增的199位亿万富翁企业家89人来自中国，平均每周都有近两位亿万富翁诞生，接近美国的三倍（美国新增人数为30人，欧洲、中东和非洲新增人数一共为34人）。中国已经取代美国，成为创造财富速度最快的国家。\u3000\u3000'
+            '路透社及《每日邮报》援引的这份报告称，截至去年年底，中国亿万富翁人数增加到了373人，拥有的总财富额为1.12万亿美元，财富增长率为39%。这373名富翁中有97%是白手起家。而在2006年，中国的亿万富翁还只有16人。\u3000\u3000'
+            '报告认为，中国的亿万富翁企业家正在引领中国的经济转型，进而带动亚洲其他地区的经济转型。在短短10年多的时间里，他们创建了多家全球最大的公司，并以前所未有的速度创造了财富。但这仅仅是开始，中国庞大的人口基数、技术创新能力和生产率增长以及政府的支持，正为个人创造财富提供前所未有的机会，这让企业家们不仅可以建立企业，也改善了人们的生活。\u3000\u3000'
+            '一位参与这份报告调研的中国富豪说，世界上没有比中国更有利于经济增长的地方了。政府的政策持续支持企业家的财富创造之路，而城市化和商业模式的变革更造就了一批有实力的新兴企业家。\u3000\u3000\u3000\u3000\u3000\u3000'
+            '瑞银和普华永道这份报告还显示，亚洲地区亿万富翁的数量已超过美国，而且他们将在三年内比美国同行更富有。一批新的中国企业家正在挑战硅谷，他们正在抓住机遇开发新的商业模式，在不同的商业领域之间快速发展。\u3000\u3000'
+            '以智能手机为例，中国有7.7亿互联网用户通过手机上网，智能手机和互联网在电子商务、小额信贷和支付领域创造了巨大的新市场。中国已经成为一个以移动互联为中心的国家，中国的企业家们正在以更快的速度建立新兴企业。庞大的人口、智能手机的普及以及政府的支持，则为新企业创造发展条件。\u3000\u3000'
+            '中国企业家正在拓展新的市场、创建新兴企业，同时也在改变社会生活。经过数年的发展，2017年中国电子商务和科技业务出现了爆发式增长。\u3000\u3000'
+            '与此同时，中国政府大力支持人工智能。截至2017年，中国的人工智能相关专利数量是美国的四倍，区块链和密码相关专利数量是美国的三倍。\u3000\u3000'
+            '报告称，从2016年到2018年，中国产生了50家“独角兽”企业（估值至少为10亿美元），略低于美国生产的62家。但快速的城市化和生产率增长，将帮助处于财富创造最前沿的中国企业家在未来几年持续跻身亿万富翁之列。\u3000\u3000'
+            '尽管美国亿万富翁财富的集中度最高，但其财富增长速度已经放缓。2017年美国亿万富翁财富总额为3.1万亿美元，增长率为12%，低于全球平均水平。在美国，科技是最大的财富驱动力，其次是消费和零售业。美国新增的亿万富翁40%来自消费和零售行业，其次是金融服务行业（17%）和科技行业（11%）。\u3000\u3000'
+            '如果以美元计算，2017年是欧洲表现突出的一年。亿万富翁的财富总额达到1.9万亿美元，增长了19%，这在一定程度上有赖于欧元对美元升值。当年，该地区的亿万富翁人数仅增加了4%，即17人，达到414人。\u3000\u3000\u3000\u3000\u3000\u3000'
+            '报告还显示，在全球2158位亿万富翁中，去年新增的199人中有40人是通过继承财富成为亿万富翁。据预测，这些人在未来20年里，将再获得3.4万亿美元的财富。未来几年，随着亿万富翁将企业转移到继承人手中，21世纪多代同堂的亿万富翁家庭正在形成。\u3000\u3000'
+            '根据平均预期寿命的统计概率，有701位70岁以上的亿万富翁，他们的财富将在未来20年向继承人和慈善事业转移。“一场大型的财富转移已经开始，过去5年，已故亿万富翁留给受益人的财富平均每年增长17%，至2017年达到了1170亿美元。”报告中写道。\u3000\u3000'
+            '到目前为止，根据报告的研究，这种代际间的财富转移主要发生在美洲和欧洲、中东和非洲。在亚太地区，印度老年亿万富翁人数最多，其次是中国香港。\u3000\u3000'
+            '在美国、欧洲和亚洲的很多老牌企业，接班人计划都会按步进行。但在一些亚洲国家如中国，很多亿万富翁年纪尚轻，还没有开始规划接班人计划，他们更愿意专注于继续创造和积累财富，实现财富多元化。\u3000\u3000'
+            '在这份报告看来，“富不过三代”这种说法似乎不再合适当今的亿万富翁，许多亿万富翁的下一代都非常积极地致力于他们的职业、家族企业或社会公益事业。虽然会有例外，但总趋势是，下一代人会极其认真地对待其财富责任。\u3000\u3000'
+            '一位亿万富翁表示：“新一代出生在互联网时代，他们更愿意冒险。他们能获得更多的信息，在尝试新想法和创业方面也更有勇气。”\u3000\u3000'
+            '来源：红星新闻\xa0责任编辑：王亚南 ',
+ 'son_url': 'https://news.sina.com.cn/c/2018-11-02/doc-ihmutuea6284595.shtml',
+ 'sub_filename': './Data/新闻/国内',
+ 'title': ['中国去年新增亿万富翁超美国近两倍 多白手起家']}
+Traceback (most recent call last):
+  File "c:\users\wang\appdata\local\programs\python\python36-32\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "E:\myspider\sina\sina\pipelines.py", line 12, in process_item
+    filename = title + '.txt'
+TypeError: can only concatenate list (not "str") to list
+2018-11-02 13:41:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://news.sina.com.cn/o/2018-11-02/doc-ihnfikve5849713.shtml> (referer: https://news.sina.com.cn/china/)
+2018-11-02 13:41:27 [scrapy.core.scraper] ERROR: Error processing {'category': '新闻',
+ 'category_url': 'http://news.sina.com.cn/',
+ 'classify': '国内',
+ 'classify_url': 'http://news.sina.com.cn/china/',
+ 'content': '\u3000\u3000原标题：萨尔瓦多总统桑切斯访华 当面感谢中国粮食援助解旱灾之急\u3000\u3000'
+            '[文/观察者网史雨轩]\u3000\u3000'
+            '据新华社11月1日报道，中国国家主席习近平在北京会见了来访的萨尔瓦多总统桑切斯。习近平指出，中国愿在教育、医疗、供水、防灾等方面向萨方提供支持。桑切斯总统则当面感谢了前不久萨尔瓦多遭受旱灾后中方及时提供了粮食援助。\u3000\u3000'
+            '据商务部交流中心10月11日介绍，2018年6月下旬以来，萨尔瓦多遭遇严重旱灾，玉米、咖啡等农作物减产严重，中国政府决定向萨方紧急提供3000吨大米赈灾。9月30日，首批1000吨大米从上海港启运，预计11月初运抵阿卡胡特拉港，剩余大米计划于11月底前分两批发运。\u3000\u3000'
+            '英国《卫报》10月30日报道认为，目前成千上万的中美洲移民（即“大篷车”）通过墨西哥跋涉到美国，原因被描述为逃避帮派暴力或是极度贫困，但其实背后有一个关键因素：气候变化。\u3000\u3000'
+            '《食品和环境报告网》称，从墨西哥到巴拿马的走廊居住着1050万人口，绝大多数居住在危地马拉、萨尔瓦多、洪都拉斯和尼加瓜拉，有100万个家庭依靠自给自足的农业。\u3000\u3000'
+            '目前多年干旱和由此产生的饥饿已经成为了移民的主要驱动力。2014年和2015年，由于干旱农民颗粒无收。2018年的萨尔瓦多农民依旧很艰难，干旱导致收成减半。\u3000\u3000'
+            '近年来中美洲气候干燥炎热，伴随周期性干旱，农民们每年越来越难恢复损失。根据世界粮食计划署数据，截止2016年6月，这片“干旱走廊”有160万人粮食供应危险，300多万人需要人道主义援助。\u3000\u3000'
+            '《食品和环境报告网》称，2017年，来自萨尔瓦多，危地马拉和洪都拉斯的16万名移民在美国边境被捕，甚至超过墨西哥越境移民美国的被捕人数（12.8万人）。\u3000\u3000'
+            '据央视报道，11月1日下午，国家主席习近平在人民大会堂同萨尔瓦多总统桑切斯举行会谈，同时邀请桑切斯总统出席中国国际进口博览会。\u3000\u3000'
+            '桑切斯总统表示，萨尔瓦多非常高兴能够与中国建立外交关系，承认并恪守一个中国原则。萨尔瓦多感谢前不久遭受旱灾后，中国及时提供了粮食援助，并表示愿意加强同中国在经贸、农业、基础设施建设等领域合作，积极参加共建“一带一路”，助力萨尔瓦多发展。\u3000\u3000'
+            '习近平主席表示，愿在教育、医疗、供水、防灾等方面向萨方提供支持。中国愿提供更多奖学金生名额，将萨尔瓦多列为中国公民组团出境旅游目的地国。\u3000\u3000'
+            '桑切斯总统告诉习近平主席，“他代表萨尔瓦多人民向中国表示感激之情，对中萨恢复外交关系表示满意。”\u3000\u3000'
+            '8月21日，萨尔瓦多与中国建交。这是2018年以来继多米尼加、布基纳法索后第三个与台湾“一刀两断”的国家。\u3000\u3000'
+            '但随后，美国在当地时间23日晚竟然声称萨尔瓦多此举“威胁了整个美洲的经济状况和安全”，“美国将继续反对中国破坏两岸关系。”\u3000\u3000'
+            '据台湾东森新闻云报道，萨尔瓦多副外长玛洛金（Evelyn '
+            'Marroquin）当地时间24日表示，“美国自己也在40年前和台湾‘断交’，现在他们跟中国已建立了牢固的外交关系。”玛洛金说：“某种程度上来说我无法理解，为何美国现在会采取这样的立场，毕竟美国自己也跟中国有（外交）关系。我不认为这项决定会影响到我们与美国的关系与做出的承诺。”\u3000\u3000'
+            '据外交部10月4日报道，驻萨尔瓦多使馆临时代办欧箭虹在国庆69周年招待会上曾致辞。\u3000\u3000'
+            '欧箭虹表示，2018年上半年萨尔瓦多对中国出口达8000万美元，较去年同期激增20多倍。这显示出了中萨经贸合作的无限潜力和广阔空间，目前中萨建交为两国贸易、投资、基建、农业、旅游等各领域互利友好合作奠定了政治基础。\u3000\u3000'
+            '欧箭虹代办引用桑切斯总统宣布两国建交时电视讲话所受，“中萨建交是正确的一步，坚信这一步将使萨尔瓦多获益，给萨尔瓦多人民带来更多机遇与实实在在的好处。”责任编辑：桂强 ',
+ 'son_url': 'https://news.sina.com.cn/o/2018-11-02/doc-ihnfikve5849713.shtml',
+ 'sub_filename': './Data/新闻/国内',
+ 'title': ['中方援助3000吨大米救旱灾 这国总统访华当面感谢']}
+Traceback (most recent call last):
+  File "c:\users\wang\appdata\local\programs\python\python36-32\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "E:\myspider\sina\sina\pipelines.py", line 12, in process_item
+    filename = title + '.txt'
+TypeError: can only concatenate list (not "str") to list
+2018-11-02 13:41:31 [scrapy.extensions.logstats] INFO: Crawled 12 pages (at 12 pages/min), scraped 0 items (at 0 items/min)
+2018-11-02 13:41:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://news.sina.com.cn/c/2018-11-02/doc-ihnfikve5854181.shtml> (referer: https://news.sina.com.cn/china/)
+2018-11-02 13:41:32 [scrapy.core.scraper] ERROR: Error processing {'category': '新闻',
+ 'category_url': 'http://news.sina.com.cn/',
+ 'classify': '国内',
+ 'classify_url': 'http://news.sina.com.cn/china/',
+ 'content': '\u3000\u3000原标题：万州公交坠江96小时\u3000\u3000本报记者 程维 周远征 '
+            '重庆万州报道\u3000\u300010月31日23∶28，重庆万州长江二桥坠江公交车被打捞出水。\u3000\u3000'
+            '坠江公交车车头露出水面后，站在打捞船上的工作人员脱帽、鞠躬默哀，救援水域停靠的船只均拉响汽笛。该公交车车身明显变形，车窗玻璃全部破裂。23∶41，坠江公交车车体全部离开水面。\u3000\u3000'
+            '此次救援历时接近4天。应急救援部对本次救援难度的评价是，此次救援为三峡库区蓄水以来难度最大：一是相对船只来说，公交车目标太小，难以精确定位；二是水过深导致作业方式复杂耗时，危险大；三是水底地形复杂，干扰物多；四是多地调集资源，多部门响应，需要多类型救援队伍配合行动。\u3000\u3000'
+            '10月30日晚，事故公交车内的黑匣子（行车数据记录仪）已找到，目前正由当地公安部门组织数据卡保护修复和数据解读。当地警方走访调查并综合接报警情况，以及查看沿途监控的上下乘客视频，初步核实失联人员15人（含公交车驾驶员1人）。\u3000\u3000'
+            '本次事故中的公交车从突然转向至坠江，仅耗时3秒。记者的调查显示，该桥的主要设计规范为1997年标准，另有多个设计标准为1985年前后的标准。\u3000\u3000'
+            '重庆市城市管理执法总队自10月29日起至2019年1月，将开展主城区城市桥涵设施管理运行突出违法违规行为监管执法专项行动。\u3000\u3000'
+            '“生命是一场无法回放的绝版电影，有些事不管你如何努力，回不去就是回不去了，就算真的回去了，你也会发现，一切已经面目全非，唯一能回去的，只是存于心底的记忆。”这句话，是2018年10月28日把一辆12米长的公交车从重庆市万州长江二桥上开进长江的公交车司机冉涌，在其一款K歌APP中的个人肖像图片中的手写体文字。\u3000\u3000'
+            '这一次，冉涌不只是回不去了，与他一并回不去的，还有14名乘客。\u3000\u3000'
+            '2018年10月28日凌晨5∶24，冉涌在该K歌APP中上传了一首自己演唱的《再回首》，这是他第二次唱这首曲子，他在上传该歌曲后发的动态称“没唱好”。这句话后，紧跟了一个闭了一只眼睛的可能代表调皮或卖萌可爱的表情。\u3000\u3000'
+            '他第一次唱这首歌的时间，是10月27日21∶44，他上传了他第一次唱的《再回首》，跟发的动态是“第一次唱”。\u3000\u3000'
+            '冉涌自2018年4月13日8∶17上传他在该APP第一次唱的《掌声响起来》以来，一共上传了29首歌曲，绝大部分是晚19时至21时左右上传的，只有几首是17时左右及23时左右上传的，另有2首为下午13时左右上传的。\u3000\u3000'
+            '这29首歌曲中，只有2018年10月28日凌晨5∶24上传的《再回首》，是深夜或凌晨在线K歌或上传。\u3000\u3000'
+            '据万州22路公交车位于该区“万达广场”起点站的指示牌显示，22路公交车的夏季第一班车的发车时间是6∶00，冬季发车时间是6∶30。\u3000\u3000'
+            '记者10月29日获得的三段关键视频显示，10月28日上午10∶02∶09，向北行驶的坠江公交车渝F27085在万州长江二桥上突然大角度左转弯，撞击向南行驶的红色小轿车后，径自冲破两道桥梁防护栏，于10∶02∶12坠入江中。\u3000\u3000'
+            '从突然急转弯至从桥面坠落全过程仅为3秒。\u3000\u3000'
+            '这三段有关公交车坠桥的关键视频，均未见该公交车减速、刹车等迹象，更未见此前外界猜测的可能因为爆胎或可能有人抢夺方向盘导致的车辆左右摇摆现象。\u3000\u3000'
+            '第一段录像由该公交车后向北行驶车辆的行车记录仪拍摄，画面相对模糊，时间戳不明显，但基本能反映该重庆市万州汽车运输（集团）有限责任公司万州公交分公司的22路环湖线公交车，行至事发点附近桥面时，突然大角度向左转向，越过桥中间的双黄线，撞击向南驶来的红色小轿车后，越过路肩上的低矮防护钢栏，并随即以接近90度切角的角度，冲入万州长江二桥上游。\u3000\u3000'
+            '第二段录像较为清晰，由向南行驶（与事故公交车相向行驶）的车辆行车记录仪拍摄，该段视频显示，公交车在10∶02∶09时，在万州长江二桥上突然大角度左转弯，撞击向南行驶的红色小轿车后，径自冲破两道桥梁防护栏，于10∶02∶12坠入江中。红色小轿车车头基本被全部撞毁，且车头被撞击得旋转了接近180度至朝北。\u3000\u3000'
+            '两道防护栏被该公交车瞬间冲破，事故车辆随即掉入距桥面67米的长江中。\u3000\u3000'
+            '第二段视频中的事故车辆，与记者10月28日晚在22路公交车起始站找到的同型公交车长度、外观基本一致。\u3000\u3000'
+            '10月29日，国家水上应急救援重庆长航队等单位的专业打捞船采用多波束声呐，发现一长约11米、宽约3米的物体。经过水下探测、定位，确定为坠江公交车，位于长江二桥上游约28米、水深约71米处。\u3000\u3000'
+            '第三段视频，救援队的水下摄像机显示，当时事故车辆在71米的水下，视频中依稀可见该车身上的广告招贴。\u3000\u3000'
+            '记者在调查中发现，重庆市因两山夹两江的地形地貌，决定了该市主城区及沿长江、嘉陵江区县，在交通解决方案上，多采用跨江大桥。截至2017年8月，长江重庆主城段已建成17座跨江大桥，4座大桥在建，待建14座。嘉陵江重庆主城段已建成25座跨江大桥，7座大桥在建，待建11座。\u3000\u3000'
+            '这些主城区内已建成的跨长江、嘉陵江的42座大桥中，均为逐年修建，其中年代最久远的重庆嘉陵江大桥于1958年修建。该市刚修葺一新的重庆嘉陵江大桥，在路肩上加装了2根上下排列的钢管防护栏。重庆嘉陵江大桥两侧的1.5米高人行护栏，依旧是钢筋混凝土立柱，加钢质防护栏。\u3000\u3000'
+            '万州长江二桥事故点的视频及照片显示，该桥的路肩上装有直径10厘米左右的钢管护栏，密集的矮立柱的底座为方形，有4颗膨胀螺钉紧固在路肩上。\u3000\u3000'
+            '2014年，北京市对该市桥梁防撞等级进行提升，按照道路设计时速80公里的速度撞击一般不会撞坏栏杆坠桥。该市2014年时计划该年度综合整治239座桥梁。\u3000\u3000'
+            '2018年10月24日正式通车的港珠澳大桥，其防撞护栏的等级，更是提升到了一个历史性的高度：旅游大巴以100公里时速撞栏，仍能保证车辆不突破防护栏掉落。\u3000\u3000'
+            '2017年底交通运输部全面修订《公路交通安全设施设计规范》，新规范中将波形护栏的“防撞等级”调整成了“防护等级”，并且在原有C级、B级、A级、SB级、SA级的防撞等级基础上增加了HB级和HA级的防撞等级。\u3000\u3000'
+            '重庆市城市管理执法总队自10月29日起至2019年1月，将开展主城区城市桥涵设施管理运行突出违法违规行为监管执法专项行动。\u3000\u3000'
+            '本次行动将“对城市桥涵设施管理运行情况进行全面摸底排查，建立工作台账，重点抓好涉及制度规范落实、设施安全管理的18项要求的摸底排查”。\u3000\u3000'
+            '落实制度规范共包括11项。包括是否按照规定编制城市桥梁养护维修的中长期规划和年度计划，或者未经批准即实施的；是否按照国家有关规定委托具有相应资质的桥梁检测评估机构对桥梁进行检测评估；是否按照规定制定城市桥梁的安全抢修预案方案；是否按照规定制定城市桥梁的安全应急预案方案；是否按照国家有关规定进行竣工验收，并建立完整的档案；是否按照规定对城市桥梁进行养护维修；是否按规定对特大型跨江大桥每五年至少进行一次安全检测，其他大桥每三年至少进行一次安全检测等等。\u3000\u3000'
+            '重庆市本次专项行动将重点围绕七项展开：擅自占用城市桥涵设施的行为；擅自在城市桥涵设施上搭建建（构）筑物的行为；擅自在城市桥梁上架设各类管线、设置广告等辅助物的行为；擅自移动、损坏城市桥涵设施和测量标志的行为；是否存在擅自在城市桥梁施工控制范围内从事河道疏浚、挖掘、打桩、地下管道顶进、爆破等作业的行为；是否存在擅自在城市大桥及其安全保护区内从事经营活动的行为；是否存在擅自在城市大桥及其安全保护区内倾倒垃圾、废渣和堆放物资的行为。\u3000\u3000'
+            '“生命是一场无法回放的绝版电影……”本次万州长江二桥22路公交车坠江重大事故的公交车司机冉涌的这句话，没有回放，只是重放。\u3000\u3000'
+            '2017年底交通运输部全面修订《公路交通安全设施设计规范》，新规范中将波形护栏的“防撞等级”调整成了“防护等级”，并且在原有C级、B级、A级、SB级、SA级的防撞等级基础上增加了HB级和HA级的防撞等级。新规范中明确了不同防撞等级的波形护栏应该根据公路的实际情况进行设置，相比2006年制订的《公路交通安全设施设计规范》，新规范对波形护栏的设置条件和防撞等级的确定更加具体化，操作性大大增加。\u3000\u3000'
+            '新规范中解释了波形护栏各个防撞等级对应的防护能量，其中C级波形护栏的防护能量是40kJ，B、Bm级波形护栏的防护能量是70kJ，A、Am级波形护栏的防护能量是160kJ，SB、SBm级波形护栏的防护能量是280kJ，SA、SAm级波形护栏的防护能量是400kJ，SS、SSm级波形护栏的防护能量是520kJ，HB级波形护栏的防护能量是640kJ，HA级波形护栏的防护能量是760kJ。根据使用经验表明，SS级波形护栏已经能够满足大多数国家公路对于护栏的设计需求，但是在一些主流车型为高重心的特大型客车（25t）、大型货车（40t、55t）的公路和那种车辆的翻车或冲断护栏将导致严重后果的桥梁路段，HB级和HA级护栏能发挥更好的防护作用。\u3000\u3000'
+            '最后需要说明的是，新规范中对于时速小于或等于40Km/h的三级、四级公路细化了波形护栏的选择，正常路段可以选用C级波形护栏，但在个别后果严重的情况才考虑使用B级和A级波形护栏。这样规定因地制宜地设置护栏，大大降低了国家对于交通安全设施方面的投入，降低了国家财政的负担，实施起来很具有长远性。责任编辑：桂强 ',
+ 'son_url': 'https://news.sina.com.cn/c/2018-11-02/doc-ihnfikve5854181.shtml',
+ 'sub_filename': './Data/新闻/国内',
+ 'title': ['万州公交坠江96小时：从急转弯到坠落全过程仅3秒']}
+Traceback (most recent call last):
+  File "c:\users\wang\appdata\local\programs\python\python36-32\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "E:\myspider\sina\sina\pipelines.py", line 12, in process_item
+    filename = title + '.txt'
+TypeError: can only concatenate list (not "str") to list
+2018-11-02 13:41:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://news.sina.com.cn/c/2018-11-02/doc-ihnfikve5886956.shtml> (referer: https://news.sina.com.cn/china/)
+2018-11-02 13:41:36 [scrapy.core.scraper] ERROR: Error processing {'category': '新闻',
+ 'category_url': 'http://news.sina.com.cn/',
+ 'classify': '国内',
+ 'classify_url': 'http://news.sina.com.cn/china/',
+ 'content': '\u3000\u3000原标题：台安全部门下令网络上不能诋毁蔡英文 网友为马英九抱屈\u3000\u3000'
+            '中国台湾网11月2日\xa0 '
+            '网络上不能诋毁蔡英文！据台湾“中时电子报”报道，台当局“国安局长”彭胜竹1日在“立院”证实，“国安局”将监控脸谱网（Facebook）等公开网络社群。台湾网络红人，有“宅神”之称的朱学恒酸说，这绝对不是怀念戒严时代，这也绝对不是侵犯言论自由，“领导人是至高无上的，不容侵犯！”也有网友忍不住为马英九抱屈。\u3000\u3000'
+            '网友说：马英九以前被人在脸谱网、网络上骂得多不堪，但有看过马英九叫“调查局”或相关局处搜集“诋毁”罪证吗？民进党上台后才凸显国民党的憨直及脸皮薄。“新的没来，不知旧的好！”民进党上台，才让我们看清他们的嘴脸！民进党的“两套标准”实在是让人受不了，太瞧不起人民的智商了！还有人说：当你们在批评韩总（韩国瑜）说意识形态不接受游行，说这是在搞戒严，那“国安局”又算搞哪出？领导人做得好，人民拍好叫好都来不及了，哪会诋毁？所以是不是要先检讨一下自己的行为？不是说好谦卑谦卑再谦卑吗？\u3000\u3000'
+            '也有网友不满说：“以后只能吾皇万岁万万岁了！”“我们是选到了什么皇帝，太夸张了吧。”“做得烂就要禁得起批评，连这点雅量都没有，还当什么领导人？”“说事实算是诋毁吗？好奇！”\u3000\u3000'
+            '至于监控的范围，据台湾“联合新闻网”报道，彭胜竹表示，侦搜的范围，包含公开的网络与社群媒体。至于污蔑部分，“国安局”称，会去看各个公开网络，确定是不是在作诋毁的动作，若是争议的讯息，会再由各“部会”一起检讨。（李宁）责任编辑：闫宏亮 ',
+ 'son_url': 'https://news.sina.com.cn/c/2018-11-02/doc-ihnfikve5886956.shtml',
+ 'sub_filename': './Data/新闻/国内',
+ 'title': ['台当局下令网上不能诋毁蔡英文 将监控社交账号']}
+Traceback (most recent call last):
+  File "c:\users\wang\appdata\local\programs\python\python36-32\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "E:\myspider\sina\sina\pipelines.py", line 12, in process_item
+    filename = title + '.txt'
+TypeError: can only concatenate list (not "str") to list
+2018-11-02 13:41:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://news.sina.com.cn/c/2018-11-02/doc-ifxeuwwt0443145.shtml> (referer: https://news.sina.com.cn/china/)
+2018-11-02 13:41:40 [scrapy.core.scraper] ERROR: Error processing {'category': '新闻',
+ 'category_url': 'http://news.sina.com.cn/',
+ 'classify': '国内',
+ 'classify_url': 'http://news.sina.com.cn/china/',
+ 'content': '\u3000\u3000原标题：日媒：打“精日”在中国拟入法 日网友：中国有这样的人？\u3000\u3000'
+            '[环球时报驻日本特约记者 '
+            '孙秀萍]《中华人民共和国英雄烈士保护法（草案）》25日提交第十三届全国人大常委会第二次会议审议。草案将增加条款，对宣扬、美化侵略战争和侵略行为追责。消息一出，大快人心。近年来，一撮“精日”分子激起民愤。中国的这一做法也立刻在日本引起关注。\u3000\u3000'
+            '日本“搜索中国”网报道称，中国社会上出现一些以穿日本旧时军服为娱乐的人，且人数有所增加。为遏制这种趋势，中国全国人大宪法和法律委员会建议在“英烈保护法（草案）”中有针对性地增加规定：“亵渎英雄烈士事迹和精神，宣扬、美化侵略战争和侵略行为，寻衅滋事，扰乱公共秩序，构成违反治安管理行为的，由公安机关依法给予治安管理处罚；构成犯罪的，依法追究刑事责任。”该报道说，中国要通过这样的做法，扑灭“精日”分子。\u3000\u3000'
+            '对于中国出现“精日”分子，日本一些人感到非常惊讶。在他们看来，中国人都是受反日教育长大的，再加上曾发生反日游行，他们甚至认为有不少中国人是“仇日”的。在今年3月，中国外交部长王毅用“中国人的败类”怒斥侮辱南京大屠杀遇难者等挑衅民族底线的行为后，“精日”分子逐渐被日本媒体所关注。\u3000\u3000'
+            '“这是真的吗？”“中国为什么会有这样的人？”在看到中国媒体有关“精日”的报道后，不少日本网友留言表示困惑。就连右翼媒体《产经新闻》也称，虽然对于多数日本人来说，非常欢迎（中国）年轻人喜欢动漫等日本文化，但也很难理解那些身穿日本旧军服进行娱乐的人的心理。日本门户网站“活力门”则关注到中国人对“精日”的愤怒，称他们的一些行为在中国掀起轩然大波，甚至遭到中国国防部公开批评。责任编辑：桂强 ',
+ 'son_url': 'https://news.sina.com.cn/c/2018-11-02/doc-ifxeuwwt0443145.shtml',
+ 'sub_filename': './Data/新闻/国内',
+ 'title': ['打“精日”在中国拟入法 日网友:中国有这样的人?']}
+Traceback (most recent call last):
+  File "c:\users\wang\appdata\local\programs\python\python36-32\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "E:\myspider\sina\sina\pipelines.py", line 12, in process_item
+    filename = title + '.txt'
+TypeError: can only concatenate list (not "str") to list
+2018-11-02 13:41:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://news.sina.com.cn/c/2018-11-02/doc-ihnfikve5920186.shtml> (referer: https://news.sina.com.cn/china/)
+2018-11-02 13:41:43 [scrapy.core.scraper] ERROR: Error processing {'category': '新闻',
+ 'category_url': 'http://news.sina.com.cn/',
+ 'classify': '国内',
+ 'classify_url': 'http://news.sina.com.cn/china/',
+ 'content': '\u3000\u3000原标题：关键时期 四位政治局常委出席了这场座谈会\u3000\u3000撰文 | 孟亚旭 \xa0'
+            '赵萌\u3000\u3000十一月的第一天，一个规格颇高的大会召开。\u3000\u3000'
+            '11月1日，民营企业座谈会在京召开，中共中央总书记、国家主席、中央军委主席习近平发表十分重要的讲话。出席座谈会的还有——\u3000\u3000'
+            '最近大家的一个感觉是，关于民营经济，高层密集发声。\u3000\u3000'
+            '比如9月和10月，习近平赴东北和广东考察期间，都曾到民营企业调研——\u3000\u3000'
+            '9月27日，在东北之行的第三站辽宁，习近平分别在一家国有企业和一家民营企业作出了重要讲话，对近期围绕国企和民企生发的各种论调，做出有力的廓清，一锤定音。一个月后，习近平在广东考察，再次与中小民营企业负责人亲切交谈。\u3000\u3000'
+            '习近平在赴广东考察前一天（10月21日），还回信勉励广大民营企业家，“希望广大民营企业家把握时代大势，坚定发展信心，心无旁骛创新创造，踏踏实实办好企业”。\u3000\u3000'
+            '习近平回信的第二天（10月22日），央行发布消息：\u3000\u3000'
+            '“人民银行今年6月增加了再贷款和再贴现额度1500亿元，现决定在此基础上，再增加再贷款和再贴现额度1500亿元，发挥其定向调控、精准滴灌功能，支持金融机构扩大对小微、民营企业的信贷投放。”\u3000\u3000'
+            '国家总理李克强在外访期间，也惦记着民营企业。\u3000\u3000'
+            '当地时间10月13日，李克强在塔吉克斯坦首都杜尚别民族宫会见拉赫蒙总统时说，“中国愿意支持有实力、讲信誉的企业，按照商业化原则到塔吉克斯坦参与相关投资建设。如果能吸引更多中国民营企业积极参与，相信这会更有利于两国相关合作的可持续发展。”\u3000\u3000'
+            '这里的背景很多。\u3000\u3000'
+            '一方面，正如10月31日的政治局会议所说，当前经济运行稳中有变，经济下行压力有所加大，部分企业经营困难较多，长期积累的风险隐患有所暴露，另一方面民企近来也遇到一些问题。\u3000\u3000'
+            '还有一个原因，就是在昨天的座谈会上习近平所说：\u3000\u3000'
+            '一段时间以来，社会上有的人发表了一些否定、怀疑民营经济的言论。比如，有的人提出所谓“民营经济离场论”，说民营经济已经完成使命，要退出历史舞台；有的人提出所谓“新公私合营论”，把现在的混合所有制改革曲解为新一轮“公私合营”；有的人说加强企业党建和工会工作是要对民营企业进行控制，等等。\u3000\u3000'
+            '在10月31日的政治局会议上也提到了民营企业，“要坚持‘两个毫不动摇’，促进多种所有制经济共同发展，研究解决民营企业、中小企业发展中遇到的困难。”\u3000\u3000'
+            '在11月1日的这次会议上，针对上述问题，习近平提到了三个“没有变”\u3000\u3000'
+            '关键时刻的关键会议，值得大家细细分析。\u3000\u3000'
+            '关于这场会议的报道，新华社通稿逾3000字，干货不少。\u3000\u3000'
+            '其一，肯定了民营经济的作用——“我国经济发展能够创造中国奇迹，民营经济功不可没”。\u3000\u3000'
+            '其二，统一思想。\u3000\u3000'
+            '“我国基本经济制度写入了宪法、党章，这是不会变的，也是不能变的。任何否定、怀疑、动摇我国基本经济制度的言行都不符合党和国家方针政策，都不要听、不要信！所有民营企业和民营企业家完全可以吃下定心丸、安心谋发展！”\u3000\u3000'
+            '其三，坦言经济确实存在问题。\u3000\u3000'
+            '“应该承认，当前一些民营经济遇到的困难是现实的，甚至相当严峻，必须高度重视。”但“这些困难是发展中的困难、前进中的问题、成长中的烦恼，一定能在发展中得到解决。”\u3000\u3000'
+            '应对挑战的关键是，“保持定力，增强信心，集中精力办好自己的事情”。\u3000\u3000对策\u3000\u3000'
+            '在这次座谈会上，习近平提到了6个举措，分别是减轻税费负担、解决融资难融资贵、营造公平竞争环境、完善政策执行方式、构建亲清新型政商关系和保护企业家人身和财产安全。\u3000\u3000'
+            '这些举措点一下：\u3000\u3000值得一提的是，在构建亲清新型政商关系方面，习近平说：\u3000\u3000'
+            '10位企业家\u3000\u3000还有一个细节。\u3000\u3000'
+            '这场座谈会上，有10位企业家代表发言——刘积仁、鲁伟鼎、王小兰、孙飘扬、卢勇、汤晓鸥、刘汉元、谈剑锋、刘屹、耿哲。\u3000\u3000'
+            '政知君注意到，这10位企业家来自制造业、人工智能、信息技术、制药、农业、环保等领域。\u3000\u3000'
+            '刘积仁是东软集团董事长，1988年成立的东软公司是中国IT解决方案与服务提供商的龙头企业；孙飘扬是恒瑞医药董事长，企业主打产品为抗肿瘤药。\u3000\u3000'
+            '卢勇和王小兰分别来自秦皇岛星箭特种玻璃有限公司和时代集团。据报道，从“神舟四号”到“神舟十一号”，包括“天宫一号”“天宫二号”和“嫦娥探月”等工程，几乎我国所有航天器上都“披”有星箭公司的小小玻璃盖片。\u3000\u3000'
+            '鲁伟鼎是万向集团的首席执行官，万向集团由其父亲、已故著名民营企业家鲁冠球在上世纪70年代末创建，目前是国内规模最大的汽车零部件制造商。\u3000\u3000'
+            '值得一提的是，众人科技创始人谈剑锋和商汤科技的创始人汤晓鸥都来自人工智能领域。\u3000\u3000'
+            '座谈会后，汤晓鸥对媒体表示：“总书记的一句话蛮接地气的——‘对民营企业我们一直没有变，我们一直没有把你们当外人’，这就知道了民营企业在市场上的定位，实际上是跟国企、外企平等的。”责任编辑：桂强 ',
+ 'son_url': 'https://news.sina.com.cn/c/2018-11-02/doc-ihnfikve5920186.shtml',
+ 'sub_filename': './Data/新闻/国内',
+ 'title': ['关键时期 四位政治局常委出席了这场座谈会']}
+Traceback (most recent call last):
+  File "c:\users\wang\appdata\local\programs\python\python36-32\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "E:\myspider\sina\sina\pipelines.py", line 12, in process_item
+    filename = title + '.txt'
+TypeError: can only concatenate list (not "str") to list
+2018-11-02 13:41:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://news.sina.com.cn/o/2018-11-02/doc-ifxeuwwt0442395.shtml> (referer: https://news.sina.com.cn/china/)
+2018-11-02 13:41:47 [scrapy.core.scraper] ERROR: Error processing {'category': '新闻',
+ 'category_url': 'http://news.sina.com.cn/',
+ 'classify': '国内',
+ 'classify_url': 'http://news.sina.com.cn/china/',
+ 'content': '\u3000\u3000原标题：网传楼市限购放开纯系谣传，太原暂无解限计划\u3000\u3000'
+            '最近一周，“取消限购”的谣言一波接过一波。消息先是从热点城市传出——“厦门长沙济南取消限购”，紧接着到“国务院要求年内放开限购”，再到“北京广州取消限价”。而这些消息无一不是旧闻新炒，以错乱时间点为障眼法引人误会。\u3000\u3000'
+            '与此同时，又有一条消息牵扯无数购房者的心：部分地区部分银行房贷利率出现下调。这被视为房贷松动的敏感信号，不少购房者突感政策势头有变。\u3000\u3000'
+            '而在太原，不少网友在微信群、朋友圈转发某自媒体文章，称国务院10月15日发文规定半年内必须放开全部限购，并引用国务院“涉及产权保护的规章、规范性文件清理工作”文件。而这些文件更是被各楼盘置业顾问疯狂转发，以此作为楼盘销售的营销说辞。\u3000\u3000'
+            '记者在查阅资料时发现，广州、厦门、杭州这三个房价在近期出现大幅调整的城市，纷纷降低落户门槛。以上信息一综合分析，便被很多人理解为地方通过抢人突破限购门槛，限购即将松动。\u3000\u3000'
+            '但经查，限购的消息实际为“过期”文件，当时即有人解读为限购取消，被辟谣，此次又被人谣传——\u3000\u3000'
+            '太原于今年5月14日开启新一轮限购，而在该政策执行快半年的时间节点上，近日，本地多位业内人士转载了一篇《限购即将解除》的消息。\u3000\u3000'
+            '与此同时，网络传言也颇多，多个注册主体为房地产营销公司、文化传媒类公司的自媒体账号发布了《国务院规定半年内必须放开楼市全部限购》的文 '
+            '章，这则行业内的“重磅消息”在自媒体中引起广泛关注。在传言中，一份声称10月发布的《国务院办公厅关于开展涉及产权保护的规章、规范性文件清理工作的 '
+            '通知》文件，为取消限购提高了可信度。\u3000\u3000'
+            '事实上，记者在查阅中国政府网网页信息时获悉，该文件于2018年5月14日发布，与网上传言中提到的今年10月份发布明显不符，其中该文件并非关于房地产领域，而是国务院办公厅关于开展涉及产权保护的规章、规范性文件清理工作的通知政策文件。\u3000\u3000'
+            '随后网传消息由于涉及误传被删。无论是“取消限购”还是“降低贷款利率”，都是没有根据的传言。\u3000\u3000'
+            '记者分别联系了厦门、长沙、济南等城市的行业媒体人。业内人士表示，“传厦门取消限购实际上是三年前的消息，当时厦门楼市背景仍在去库存，而次 '
+            '年重新加码限购。”而至于长沙、济南取消限购的传言，实际上是当地政府新出台的人才及落户政策，与楼市限购、调控关系不大。更有传言北京、广州取消限价， '
+            '则与全国限购大背景也没有冲突，关系不密切。\u3000\u3000'
+            '业内人士表示，很多人都关注到了是否解除限购这一点，却忽视了“备案价调整后，不得随意上涨更不能擅自降价”这一兜底性限制条款。\u3000\u3000'
+            '太原市房管局相关工作人员表示，今年5月，住建部印发《住房城乡建设部关于进一步做好房地产市场调控工作有关问题的通知》，重申坚持房地产调控 '
+            '目标不动摇、力度不放松，并对进一步做好房地产调控工作提出了关于加快制定实施住房发展规划、抓紧调整住房和用地供应结构、切实加强资金管控、大力整顿规 '
+            '范市场秩序等6项明确要求。而至于是否解除限购，太原目前无取消限购的计划。\u3000\u3000'
+            '目前，太原对拥有1套城六区住房的本市城镇居民家庭（包括购房人、配偶及未成年子女，下同）、在城六区没有住房且能够提供在本市1年以上（或逐 '
+            '月连续缴满6个月）的纳税证明（或社会保险缴纳证明）的非本市城镇居民家庭，在本市城六区限购1套住房。对拥有2套以上（含2套）城六区住房的本市城镇居 '
+            '民家庭、拥有1套以上（含1套）城六区住房的非本市城镇居民家庭及无法提供在本市1年以上（或逐月连续缴满6个月）的纳税证明（或社会保险缴纳证明）的非 '
+            '本市城镇居民家庭，暂停在本市城六区内购买住房。城六区是指小店区、迎泽区、杏花岭区、尖草坪区、万柏林区和晋源区，也就是说，清徐县、阳曲县、娄烦县和 '
+            '古交市不在限购范围内。\u3000\u3000'
+            '近两年，太原市购房者普遍感到房贷利率逐步上涨，再无优惠可循。的确，从2016年开始，全国首套房贷利率已经连涨20个月。\u3000\u3000'
+            '据融360的数据显示，2018年9月全国首套房贷款平均利率为5.70%，相当于基准利率116.3%，环比8月上升0.18%；同比去年9月首套房贷款平均利率5.22%，上升9.20%。\u3000\u3000'
+            '而在近日，部分城市媒体报道：部分地区部分银行首套房贷利率下降。山西晚报记者了解到，首套房贷利率下降只是少数银行的现象，下降的并非基准利 '
+            '率，而是首套房贷利率的上浮比例。例如，基准利率上浮10%-15%，下降到了5%-10%，5个百分点的浮动虽说是利好政策，但对于刚需、改善型置业者 '
+            '来说，这是银行或开发商对购房行为象征性的安慰优惠，对于投资基本没有刺激作用，对于市场未来的走势也没有风向标作用。一位股份制银行个贷部工作人员告诉 '
+            '山西晚报记者，楼市观望情绪浓厚，市场成交量下滑，银行为在年底争抢客源，所以房贷利率见顶回落是正常现象，而这并非楼市调控放松信号。\u3000\u3000'
+            '在太原，由于房地产开发贷款、信托融资仍然受到限制，二套房贷利率还在上浮，差别化信贷并没有放松。\u3000\u3000'
+            '易居研究院智库中心研究总监严跃进表示，近日，银行房贷利率继续上调，但上调幅度收窄。一个方面，银行房贷方面仍然额度紧张，贷款资金短期内不 '
+            '会下跌；其次，受到近期降准等政策影响，资金面未来改善空间大，房贷利率持续上涨的可能性比较小；从行业角度来看，今年第四季度房贷市场有望改善，对于刺 '
+            '激购房需求和稳定市场交易等都有较为积极的意义。因此，当前房地产调控没有放松迹象，相对严厉的调控政策还会持续，房贷利率没有很大的调整空间，所以出现 '
+            '了涨幅回落的现象。\u3000\u3000'
+            '除银行贷款，公积金贷款利率也有调整。太原市购买首套住房的缴存职工家庭申请公积金贷款，最低首付比例不低于30%；购买第二套住房的缴存职工家庭申请公积金贷款，最低首付比例不低于40%，贷款利率按照首套房贷款利率1.1倍计息。\u3000\u3000'
+            '太原市公积金管理中心工作人员算了一笔账，太原公积金执行5年以上贷款利率3.25%。如果购买的是二套房，首付最低四成，且贷款利率上浮 '
+            '10%，即5年以上利率为3.575%。以贷款80万元、 '
+            '30年期为例，原本需要支付39万元利息，月供4389元；现在需要支付43万元利息，月供4606元。\u3000\u3000'
+            '今年楼市传统的“金九银十”逊色不少，成交量显现疲弱态势。国庆黄金周期间，多地楼市销售“凉凉”，一天成交量低迷成为普遍现象。\u3000\u3000'
+            '业内人士表示，虽然太原调控是从2018年5月开始，但全国这一轮调控是从2016年9月30日开始的，持续了两年时间。从这两年的调控基调来 '
+            '看，楼市政策没有大的波动，尤其是今年7月31日国家提出要下决心解决好房地产市场问题，坚决控制房价上涨。在这样的政策背景下，全国多个城市相继采取了 '
+            '很密集的调控措施，虽然各地针对公积金领域的监管措施略显分化，严厉力度却远超以往，这意味着市场越来越趋于理性化。\u3000\u3000'
+            '当前处于市场调整期，这一阶段会对购房者买房有啥影响？业内人士表示，当前大背景下，房价会有波动，这对很多购房者做买房决定产生了影响。比 '
+            '如，购房者会考虑价格更低的小开发商开发的楼盘。但购房时应避免单从房价来决定是否买房，而要考虑开发商的资质和品牌。尤其是这时候，一些小开发商为了回 '
+            '笼资金，适当压低房价，一旦购房者买了，后续可能有种种服务不到位的现象。\u3000\u3000'
+            '很多购房者仍然认为房屋具有投资、投机价值，在房贷利率不断增加，买房成本越来越高的情况下，仍然不理性购房。在高利率下，投资者需要考虑未来 '
+            '还贷的压力是否能够承受得起，更有不符合限购规则的购房者选择全款买房。在暗箱操作下，一旦房管部门发现将不会给这套房子备案登记，如果不登记，那么很可 '
+            '能面临着一房多卖的风险，到时不会受法律保护。\u3000\u3000'
+            '“买房付出的成本很多来自于炒房成本的转嫁，比如太原疯涨的学区房，现在部分学区房房价高达3万元/平方米，以其他城市的经验来看，这些房子的 '
+            '房价掉得最厉害。对于很多过于炒作概念的房子，在这个时候最不抗落，买房一定要注意。除了选择好城市地段，就是不要过分听取概念的虚无缥缈。”业内人士表 '
+            '示。（山西晚报）责任编辑：桂强 ',
+ 'son_url': 'https://news.sina.com.cn/o/2018-11-02/doc-ifxeuwwt0442395.shtml',
+ 'sub_filename': './Data/新闻/国内',
+ 'title': ['国务院发文规定半年内须放开限购？ 官方辟谣']}
+Traceback (most recent call last):
+  File "c:\users\wang\appdata\local\programs\python\python36-32\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "E:\myspider\sina\sina\pipelines.py", line 12, in process_item
+    filename = title + '.txt'
+TypeError: can only concatenate list (not "str") to list
+2018-11-02 13:41:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://news.sina.com.cn/c/2018-11-02/doc-ihnfikve6270088.shtml> (referer: https://news.sina.com.cn/china/)
+2018-11-02 13:41:52 [scrapy.core.scraper] ERROR: Error processing {'category': '新闻',
+ 'category_url': 'http://news.sina.com.cn/',
+ 'classify': '国内',
+ 'classify_url': 'http://news.sina.com.cn/china/',
+ 'content': '\u3000\u3000原标题： 近日内蒙古政法系统多人落马\u3000\u3000法制晚报·看法新闻（记者 '
+            '庞岚）昨夜，内蒙古自治区公安厅副厅长、呼和浩特市副市长、呼和浩特市公安局局长李志斌被证实自杀，而近日内蒙古政法系统多人落马。\u3000\u3000'
+            '此外，今早多家媒体报道称中石油渤海钻探总经理、党委副书记周宗强于10月30日跳河自杀，中石油的一份内部讣告解释，周宗强系因工作压力和家事原因去世。\u3000\u3000'
+            '据新华社消息，内蒙古自治区公安厅副厅长、呼和浩特市副市长、呼和浩特市公安局局长李志斌11月1日自杀身亡。\u3000\u3000'
+            '李志斌，男，汉族，1967年12月出生，山西朔州人，中央党校大学学历，1987年8月参加工作，1993年10月加入中国共产党，现任内蒙古自治区公安厅党委委员、副厅长，呼和浩特市副市长、市政府党组成员，市公安局党委书记、局长、督察长。\u3000\u3000'
+            '简历显示，李志斌曾长期在包头工作。2002年到2009年先后任包头公安局东河分局副局长、党委副书记、政委，此后升任包头公安局副局长，并且兼任了城市管理行政执法局副局长。\u3000\u3000'
+            '2015年李志斌调任赤峰，任赤峰市副市长、市公安局党委书记、局长。不久后即升任内蒙古自治区公安厅党委委员、呼和浩特市政府党组成员、市公安局党委书记。2016年，进一步升任内蒙古公安厅副厅长，呼和浩特市副市长、市政府党组成员，市公安局党委书记、局长、督察长。\u3000\u3000'
+            '李志斌任赤峰市公安局党委书记、局长期间，恰好曾处置应对了内蒙古公安厅原厅长赵黎平涉嫌故意杀人一案。据多家媒体报道，此案被害人是一名28岁的女性，与赵黎平关系亲密。而当时中纪委的通报称赵黎平非法持有枪支、弹药并且与他人通奸。2016年11月11日上午，赵黎平因故意杀人罪，受贿罪，非法持有枪支、弹药罪，非法储存爆炸物罪被判处死刑，二审维持原判。2017年5月26日上午，赵黎平被执行死刑。\u3000\u3000'
+            '而就在刚刚过去的10月份，内蒙古反腐风劲吹，政法系统有多人落马。\u3000\u3000'
+            '10月25日，中纪委国家监委发布消息：内蒙古自治区人大常委会原副主任邢云涉嫌严重违纪违法，目前正接受中央纪委国家监委纪律审查和监察调查。简历显示，邢云曾任鄂尔多斯市委书记、包头市委书记、内蒙古自治区党委政法委书记等职。邢云任内蒙古政法委书记时，任内蒙古公安厅厅长的正是赵黎平。\u3000\u3000'
+            '10月30日，内蒙古自治区公安厅原党委委员、副厅长孟建伟被查。简历显示，2003年到2009年，孟建伟也在包头工作，先后任包头公安局局长、政法委书记等职，也就是说他此前曾是李志斌的上级。\u3000\u3000'
+            '10月29日，内蒙古纪委监委通报，内蒙古自治区呼和浩特市公安局党委委员、副局长杜宝君落马。简历显示，李志斌任包头公安局副局长期间，杜宝君有两年时间与其共事，也任包头公安局副局长。而李志斌升任呼市公安局党委书记、局长之后，杜宝君是其下属。\u3000\u3000'
+            '据多家媒体报道，中国石油集团渤海钻探工程有限公司总经理、党委副书记周宗强于10月30日跳河自杀。据《财新》报道，中石油的一份内部讣告解释，周宗强系因工作压力和家事原因去世。\u3000\u3000'
+            '周宗强最近一次公开露面是在10月26日，当日他到渤海钻探井下作业分公司参加QHSE（质量健康安全环保）审核定级末次会，并发表了讲话。工商信息显示，周宗强目前仍为渤海钻探的法定代表人。\u3000\u3000'
+            '公开资料显示，现年54岁的周宗强曾长期供职于中石油长庆油田，2017年才出任渤海钻探总经理。\u3000\u3000'
+            '2003年起，周宗强担任中石油长庆油田分公司副总理、安全总监。2013年2月起，兼任陕西延安石油天然气有限公司总经理、党委副书记。\u3000\u3000'
+            '官网资料显示，周宗强长期供职的长庆油田是隶属于中国石油天然气股份有限公司的地区性油田公司，总部设在陕西省西安市，工作区域在鄂尔多斯盆地，公司拥有资产总额390.51亿元。\u3000\u3000'
+            '因为长庆油田与延长石油在陕北的矿权冲突由来已久，为解决长庆油田和延长石油的矿权争议，2012年7月，中石油天然气股份有限公司和延长石油集团公司共同出资组建成立了陕西延安石油天然气有限公司，公司注册资本20亿元，中石油持股51%，延长石油出资持股49%。而周宗强正是在该公司成立后不久，兼任其总经理、党委副书记。\u3000\u3000'
+            '据界面新闻报道，如今这家公司名存实亡。就在今年9月，长庆油田和延长石油因为矿权纠纷发生冲突，长庆油田护矿队与延长石油雇佣人员对峙，有人员受伤，而且这已是长庆油田和延长石油今年第三次在枣林坪镇中山村发生冲突。责任编辑：桂强 ',
+ 'son_url': 'https://news.sina.com.cn/c/2018-11-02/doc-ihnfikve6270088.shtml',
+ 'sub_filename': './Data/新闻/国内',
+ 'title': ['内蒙古公安厅副厅长自杀 当地政法系统多人落马']}
+Traceback (most recent call last):
+  File "c:\users\wang\appdata\local\programs\python\python36-32\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "E:\myspider\sina\sina\pipelines.py", line 12, in process_item
+    filename = title + '.txt'
+TypeError: can only concatenate list (not "str") to list
+2018-11-02 13:41:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://news.sina.com.cn/c/2018-11-02/doc-ihmutuea6217982.shtml> (referer: https://news.sina.com.cn/china/)
+2018-11-02 13:41:54 [scrapy.core.scraper] ERROR: Error processing {'category': '新闻',
+ 'category_url': 'http://news.sina.com.cn/',
+ 'classify': '国内',
+ 'classify_url': 'http://news.sina.com.cn/china/',
+ 'content': '\u3000\u3000原标题：内蒙古公安厅副厅长，呼和浩特市副市长、缢亡，留遗书称抑郁严重\u3000\u3000'
+            '从内蒙古公安厅刑侦部门获悉，2018年11月1日凌晨，内蒙古公安厅副厅长、呼和浩特市副市长、公安局局长李志斌在呼和浩特市公安局休息室内缢亡。经公安机关勘查调查勘验，初步排除他杀可能。现场遗书称其一直被抑郁症困扰，每天都靠高效安眠药才能入睡。\u3000\u3000'
+            '来源：内蒙古新闻网\u3000\u3000'
+            '据新华社消息，记者从呼和浩特市有关方面获悉，内蒙古自治区公安厅副厅长、呼和浩特市副市长、呼和浩特市公安局局长李志斌11月1日自杀身亡。\u3000\u3000'
+            '在此之前，10月30日，内蒙古自治区公安厅原党委委员、副厅长孟建伟（正厅级）被查；10月29日，内蒙古纪委监委通报，内蒙古自治区呼和浩特市公安局党委委员、副局长杜宝君落马。\u3000\u3000'
+            '李志斌此前曾任赤峰赤峰市副市长、市公安局党委书记、局长。期间曾处置应对了“3·20”内蒙古政协原副主席、公安厅原厅长赵黎平涉嫌故意杀人一案。\u3000\u3000'
+            '2015年3月20日，已退休的赵黎平在赤峰市境内涉嫌故意杀人，被公安机关羁押。多家媒体报道称，被害人是一名28岁的女性，家住赤峰，与赵关系较为亲密。7月31日，中纪委通报称，“经查，赵黎平严重违反廉洁自律规定，收受礼金；利用职务上的便利，在干部选拔任用、企业经营等方面为他人谋取利益，收受贿赂；非法持有枪支、弹药；严重违反社会主义道德，与他人通奸。”\u3000\u3000'
+            '2015年，李志斌卸任内蒙古赤峰公安局长时，自治区公安厅党委委员、政治部主任徐晓波表示，“李志斌同志在赤峰工作期间，紧紧围绕公安改革和‘四项建设’谋划推进工作，带领广大民警妥善处置应对了‘3·20’案件等一批重大案事件，全市命案侦破率达100%；着力用‘六位一体’新机制打造了攻防兼备立体多元的治安防控新体系，‘全国百城禁毒会战’等工作走在了全区乃至全国前列。”\u3000\u3000'
+            '男，汉族，1967年12月出生，山西朔州人，中央党校大学学历，1987年8月参加工作，1993年10月加入中国共产党，现任内蒙古自治区公安厅党委委员、副厅长，呼和浩特市副市长、市政府党组成员，市公安局党委书记、局长、督察长。\u3000\u3000'
+            '1987.08—2002.07 '
+            '内蒙古自治区包头市公安局石拐分局石拐派出所民警、刑警队技术员、刑警队副队长、刑警队队长、副局长（其间：1998.08—2000.12中央党校函授学院政法专业学习）\u3000\u3000'
+            '2002.07—2006.05 内蒙古自治区包头市公安局东河分局副局长\u3000\u30002006.05—2009.01 '
+            '内蒙古自治区包头市公安局东河分局党委副书记、政委（副处级）\u3000\u30002009.01—2009.08 '
+            '内蒙古自治区包头市公安局副局长\u3000\u30002009.08—2011.02 '
+            '内蒙古自治区包头市公安局副局长兼市城市管理行政执法局副局长\u3000\u30002011.02—2012.12 '
+            '内蒙古自治区包头市公安局副局长兼市城市管理行政执法局副局长（正处级）\u3000\u30002012.12—2015.01 '
+            '内蒙古自治区包头市公安局党委副书记、副局长兼市城市管理行政执法局副局长（正处级）\u3000\u3000'
+            '2015.01—2015.12 内蒙古自治区赤峰市副市长、市公安局党委书记、局长\u3000\u3000'
+            '2015.12—2016.01 内蒙古自治区公安厅党委委员、呼和浩特市政府党组成员、市公安局党委书记\u3000\u3000'
+            '2016.01— '
+            '内蒙古自治区公安厅党委委员、副厅长，呼和浩特市副市长、市政府党组成员，市公安局党委书记、局长、督察长责任编辑：桂强 ',
+ 'son_url': 'https://news.sina.com.cn/c/2018-11-02/doc-ihmutuea6217982.shtml',
+ 'sub_filename': './Data/新闻/国内',
+ 'title': ['内蒙古公安厅副厅长李志斌缢亡 留遗书称抑郁严重']}
+Traceback (most recent call last):
+  File "c:\users\wang\appdata\local\programs\python\python36-32\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "E:\myspider\sina\sina\pipelines.py", line 12, in process_item
+    filename = title + '.txt'
+TypeError: can only concatenate list (not "str") to list
+2018-11-02 13:41:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://news.sina.com.cn/o/2018-11-02/doc-ihmutuea6250010.shtml> (referer: https://news.sina.com.cn/china/)
+2018-11-02 13:41:57 [scrapy.core.scraper] ERROR: Error processing {'category': '新闻',
+ 'category_url': 'http://news.sina.com.cn/',
+ 'classify': '国内',
+ 'classify_url': 'http://news.sina.com.cn/china/',
+ 'content': '\u3000\u3000原标题：重庆公交车坠江原因查明 回顾86小时救援全过程\u3000\u3000中新网客户端11月2日电 '
+            '中新网记者从万州区委宣传部获悉，重庆公交车坠江原因查明，系乘客在乘坐公交车过程中与司机发生争吵，进而演化成肢体冲突。双方的互殴行为造成车辆失控，致使车辆与对向正常行驶的小轿车撞击后坠江，十五个鲜活的生命瞬间消逝。\u3000\u3000'
+            '10月28日10时许，重庆市万州区一辆公交车行驶至长江二桥时，与一辆小轿车相撞后坠江。根据调查事实，乘客刘某在乘坐公交车过程中，与正在驾车行驶中的公交车驾驶员冉某发生争吵，两次持手机攻击正在驾驶的公交车驾驶员冉某，实施危害车辆行驶安全的行为，严重危害车辆行驶安全。冉某作为公交车驾驶人员，在驾驶公交车行进中，与乘客刘某发生争吵，遭遇刘某攻击后，应当认识到还击及抓扯行为会严重危害车辆行驶安全，但未采取有效措施确保行车安全，将右手放开方向盘还击刘某，后又用右手格挡刘某的攻击，并与刘某抓扯，其行为严重违反公交车驾驶人职业规定。乘客刘某和驾驶员冉某之间的互殴行为，造成车辆失控，致使车辆与对向正常行驶的小轿车撞击后坠江，造成重大人员伤亡。\u3000\u3000'
+            '坠江事故发生后，外界一直高度关注对人员的搜救及车辆打捞工作。最终，经历近86个小时的救援工作，在10月31日深夜，坠江公交车体被整体打捞出水。以下为整个事件发生与救援过程：\u3000\u3000\u3000\u3000'
+            '10时许，重庆市万州区一辆公交车行驶至长江二桥时，与一辆小轿车相撞后坠江。经公安机关初步核实，失联人员15人。\u3000\u3000'
+            '下午5时许，@平安万州 '
+            '发布通报：经初步事故现场调查，系公交客车在行驶中突然越过中心实线，撞击对向正常行驶的小轿车后冲上路沿，撞断护栏，坠入江中。\u3000\u3000'
+            '事故发生后，国家应急管理部、公安部、交通运输部派员赶赴现场，全力指导协助地方做好人员搜救等处置工作。重庆市委、市政府主要领导高度重视，立即作出指示，亲自指挥，现场成立应急救援指挥部并全面开展救援。万州区委、区政府紧急组织公安、海事、消防、武警、长航等相关救援力量全力救援。\u3000\u3000'
+            '截止23时30分，救援人员打捞出2具遇难者遗体。\u3000\u3000\u3000\u3000'
+            '共有70多艘船只围绕公交车坠江水域全面开展搜救。\u3000\u3000'
+            '经过救援人员水下探测、定位，确定坠江公交车位于长江二桥上游约28米、水深约71米处。\u3000\u3000\u3000\u3000'
+            '上午6时许，潜水员开始下水作业。\u3000\u3000上午10时，第二批潜水员入水。\u3000\u3000'
+            '截至下午3时，三批下潜救援人员救捞出第7名遇难者遗体，并还发现2名遇难者遗体。\u3000\u3000'
+            '事故发生当天，万州公安局交巡警支队通报称，小轿车驾驶员邝某娟被警方控制。30日，记者致电邝某娟丈夫熊某，熊某告诉记者，目前警方已经解除对邝某娟的控制，妻子已经平安回家，一切都好。\u3000\u3000\u3000\u3000'
+            '交通运输部专业潜水员轮番下水，连夜作战。\u3000\u3000'
+            '0时50分，第五批下水的潜水员鲁玉鑫在失事公交车内找到了黑匣子（行车数据记录仪），打捞出水并交给当地公安部门。\u3000\u3000'
+            '11时31分，第七批潜水员下水，完成坠江公交车车尾吊带的安装。\u3000\u3000'
+            '14时46分，第八批潜水员下水，完成坠江公交车车头吊带的安装。\u3000\u3000'
+            '21时31分，开始对重庆万州坠江公交车进行起吊工作。\u3000\u3000'
+            '23时30分左右，成功将坠江公交车整体打捞出水。责任编辑：张申 ',
+ 'son_url': 'https://news.sina.com.cn/o/2018-11-02/doc-ihmutuea6250010.shtml',
+ 'sub_filename': './Data/新闻/国内',
+ 'title': ['重庆公交车坠江原因查明 回顾86小时救援全过程']}
+Traceback (most recent call last):
+  File "c:\users\wang\appdata\local\programs\python\python36-32\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "E:\myspider\sina\sina\pipelines.py", line 12, in process_item
+    filename = title + '.txt'
+TypeError: can only concatenate list (not "str") to list
+2018-11-02 13:42:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://blog.sina.cn/> (referer: http://news.sina.com.cn/guide/)
+2018-11-02 13:42:02 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-11-02 13:42:02 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 8311,
+ 'downloader/request_count': 26,
+ 'downloader/request_method_count/GET': 26,
+ 'downloader/response_bytes': 503975,
+ 'downloader/response_count': 26,
+ 'downloader/response_status_count/200': 22,
+ 'downloader/response_status_count/302': 4,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 11, 2, 5, 42, 2, 240574),
+ 'log_count/DEBUG': 50,
+ 'log_count/ERROR': 10,
+ 'log_count/INFO': 8,
+ 'offsite/domains': 23,
+ 'offsite/filtered': 208,
+ 'request_depth_max': 2,
+ 'response_received_count': 21,
+ 'scheduler/dequeued': 26,
+ 'scheduler/dequeued/memory': 26,
+ 'scheduler/enqueued': 26,
+ 'scheduler/enqueued/memory': 26,
+ 'start_time': datetime.datetime(2018, 11, 2, 5, 40, 31, 153484)}
+2018-11-02 13:42:02 [scrapy.core.engine] INFO: Spider closed (finished)
+2018-11-02 13:50:12 [scrapy.utils.log] INFO: Scrapy 1.5.1 started (bot: sina)
+2018-11-02 13:50:12 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.5, cssselect 1.0.3, parsel 1.5.0, w3lib 1.19.0, Twisted 18.9.0, Python 3.6.6 (v3.6.6:4cf1f54eb7, Jun 27 2018, 02:47:15) [MSC v.1900 32 bit (Intel)], pyOpenSSL 18.0.0 (OpenSSL 1.1.0i  14 Aug 2018), cryptography 2.3.1, Platform Windows-10-10.0.17134-SP0
+2018-11-02 13:50:12 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'sina', 'DOWNLOAD_DELAY': 3, 'LOG_FILE': 'news.log', 'NEWSPIDER_MODULE': 'sina.spiders', 'SPIDER_MODULES': ['sina.spiders'], 'USER_AGENT': 'Mozilla/5.0 (Windows NT 6.1; rv,2.0.1) Gecko/20100101 Firefox/4.0.1'}
+2018-11-02 13:50:12 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2018-11-02 13:50:12 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-11-02 13:50:12 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-11-02 13:50:13 [scrapy.middleware] INFO: Enabled item pipelines:
+['sina.pipelines.SinaPipeline']
+2018-11-02 13:50:13 [scrapy.core.engine] INFO: Spider opened
+2018-11-02 13:50:13 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-11-02 13:50:13 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-11-02 13:50:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://news.sina.com.cn/guide/> (referer: None)
+2018-11-02 13:50:16 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-11-02 13:50:16 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 254,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 23365,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 11, 2, 5, 50, 16, 533188),
+ 'log_count/DEBUG': 2,
+ 'log_count/INFO': 7,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2018, 11, 2, 5, 50, 13, 22672)}
+2018-11-02 13:50:16 [scrapy.core.engine] INFO: Spider closed (finished)
+2018-11-02 13:52:06 [scrapy.utils.log] INFO: Scrapy 1.5.1 started (bot: sina)
+2018-11-02 13:52:06 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.5, cssselect 1.0.3, parsel 1.5.0, w3lib 1.19.0, Twisted 18.9.0, Python 3.6.6 (v3.6.6:4cf1f54eb7, Jun 27 2018, 02:47:15) [MSC v.1900 32 bit (Intel)], pyOpenSSL 18.0.0 (OpenSSL 1.1.0i  14 Aug 2018), cryptography 2.3.1, Platform Windows-10-10.0.17134-SP0
+2018-11-02 13:52:06 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'sina', 'DOWNLOAD_DELAY': 3, 'LOG_FILE': 'news.log', 'NEWSPIDER_MODULE': 'sina.spiders', 'SPIDER_MODULES': ['sina.spiders'], 'USER_AGENT': 'Mozilla/5.0 (Windows NT 6.1; rv,2.0.1) Gecko/20100101 Firefox/4.0.1'}
+2018-11-02 13:52:06 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2018-11-02 13:52:07 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-11-02 13:52:07 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-11-02 13:52:07 [scrapy.middleware] INFO: Enabled item pipelines:
+['sina.pipelines.SinaPipeline']
+2018-11-02 13:52:07 [scrapy.core.engine] INFO: Spider opened
+2018-11-02 13:52:07 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-11-02 13:52:07 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-11-02 13:52:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://news.sina.com.cn/guide/> (referer: None)
+2018-11-02 13:52:07 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-11-02 13:52:07 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 254,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 23366,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 11, 2, 5, 52, 7, 658017),
+ 'log_count/DEBUG': 2,
+ 'log_count/INFO': 7,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2018, 11, 2, 5, 52, 7, 251293)}
+2018-11-02 13:52:07 [scrapy.core.engine] INFO: Spider closed (finished)
